@@ -1,0 +1,352 @@
+id,category,name,address,city,state,zip,longitude,latitude,website,phone
+LOC000001,Hospital,Stamford Hospital,30 Shelburne Rd,Stamford,CT,6901,41.054764,-73.553821,stamfordhospital.org,(203) 276 1000
+LOC000002,City Department,Stamford Fire & Rescue Dept,629 Main Street ,Stamford,CT,6901,41.054467,-73.534195,http://www.ci.stamford.ct.us/,(203) 977-4763
+LOC000003,U.S.Miltary,US Army National Guard Recruiting,51 Bank St,Stamford,CT,6901,41.05288,-73.540114,n/a,(203) 323-2015 
+LOC000004,Rail,Metro North Railroad Station - Old Greenwich,1Sound Beach Avenue,Greenwich,CT,6870,41.024017,-73.565338,mta.info,(877) 690-5114
+LOC000005,Bank,First County Bank,117 Prospect Street,Stamford,CT,6901,41.05938,-73.534915,firstcountybank.com,(203) 462-4400
+LOC000006,Bank,Chase,45 Prospect St,Stamford,CT,6901,41.057419,-73.537494,chase.com,(203) 969-3235
+LOC000007,Bank,People's United Bank,350 Bedford St,Stamford,CT,6902,41.056294,-73.538513,peoples.com,(203) 359-6013
+LOC000008,Bank,Wells Fargo Bank,300 Main St,Stamford,CT,6901,41.05321,-73.540617, wellsfargo.com,(203) 348-4047
+LOC000009,Bank,Bank of America,1 Atlantic St,Stamford,CT,6901,41.055163,-73.539114,locators.bankofamerica.com,(203) 351-1207
+LOC000010,University,University of Connecticut-Stamford,1 University Pl,Stamford,CT,6901,41.055723,-73.543189,stamford.uconn.edu,(203) 251-8400 
+LOC000011,City Department,Stamford Health System,12 Merrell Ave,Stamford,CT,6902,41.055456,-73.554965, stamfordhospital.org,(203) 406-7097
+LOC000012,City Department,Stamford Police Department,805 Bedford St,Stamford,CT,6901,41.060925,-73.53761,stamfordpd.org,(203) 977-4444
+LOC000013,Public School,Cloonan Middle School,11 W North St,Stamford,CT,6902,41.058963,-73.547051,cloonanms.org,(203) 977-4544 
+LOC000014,Public School,Hart Magnet Elementary School,61 Adams Ave,Stamford,CT,6902,41.057858,-73.547865,hartschool.org,(203) 977-5082
+LOC000015,Public School,Sacred Heart Parochial School,1 Schuyler Avenue,Stamford,CT,6902,41.052786,-73.547739,sacredheartstamford.com,(203) 323-4844 
+LOC000016,Public School,The Ballet School of Stamford,175 Atlantic St,Stamford,CT,6901,41.052965,-73.539391,balletschoolofstamford.org,(203) 358-8853
+LOC000017,Public School,Trailblazers Academy,83 Lockwood Ave,Stamford,CT,6902,41.053421,-73.521426,trailblazersacademy.org,(203) 977-5690
+LOC000018,Public School,Rogers International School,202 Blachley Rd,Stamford,CT,6902,41.056541,-73.515579,rogersinternationalschool.org,(203) 977-4560
+LOC000019,Hotel,Amsterdam Hotel,19 Clarks Hill Ave,Stamford,CT,6902,41.054914,-73.529664,stamfordamsterdam.com,(203) 327-4300
+LOC000020,Hotel,Courtyard Stamford Downtown,275 Summer St,Stamford,CT,6901,41.055232,-73.540571,marriott.com,(203) 358-8822
+LOC000021,Hotel,Sheraton Stamford Hotel,700 E Main St,Stamford,CT,6901,41.054354,-73.531857,sheratonstamford.com,(203) 358-8400
+LOC000022,Hotel,Hampton Inn & Suites Stamford,26 Mill River St,Stamford,CT,6902,41.052866,-73.546186,hamptoninn.hilton.com,(203) 353-9855
+LOC000023,Hotel,Hotel Zero Degrees,909 Washington Blvd,Stamford,CT,6901,41.052196,-73.542201,hotelzerodegrees.com,(203) 363-7900
+LOC000024,Hotel,Stamford Marriott Hotel & Spa,243 Tresser Blvd,Stamford,CT,6901,41.051457,-73.536229,marriott.com,(203) 357-9555 
+LOC000025,Hotel,Super 8,32 Grenhart Rd,Stamford,CT,6902,41.045073,-73.558879,stamfordsuper8.com,(203) 324-8887
+LOC000026,Hotel,Starwood Hotels & Resorts,333 Ludlow St,Stamford,CT,6902,41.042631,-73.533105,starwoodhotels.com,(203) 964-6000
+LOC000027,Hotel,Hilton Stamford Hotel & Executive Meeting Center,1 1st Stamford Pl,Stamford,CT,6902,41.044308,-73.551189,hilton.com,(203) 967-2222
+LOC000028,Hotel,La Quinta Inn & Suites Stamford / New York City,135 Harvard Ave,Stamford,CT,6902,41.043966,-73.56091,laquintastamfordnewyorkcity.com,(203) 357-7100
+LOC000029,University,Rider University,2083 Lawrenceville Rd,Stamford,CT,8648,41.051819,-73.542229,rider.edu,(609) 896-5000 
+LOC000030,University,University Hospital-Hamilton,1440 Lower Ferry Rd,Stamford,CT,8618,40.281651,-74.796005,rwjhamilton.org,(609) 890-4450 
+LOC000031,Health Care Facility,Heart Care Specialists at Capital Health,2 Capital Way ,Stamford,CT,8534,40.293514,-74.806799,capitalheartcare.com,(609) 393-1524
+LOC000032,Health Care Facility,"Delaware Valley OB/GYN and Infertility Group, PC",2 Princess Rd,Stamford,CT,8648,40.284096,-74.712402,delvalobgyn.com1 ,(609) 896-0777
+LOC000033,Health Care Facility,Lawrence Ob-Gyn Associates,123 Franklin Corner Rd ,Stamford,CT,8648,40.279408,-74.715454,lawrenceobgyn.com,(609) 896-1400 
+LOC000034,Health Care Facility,Lawrenceville Plastic Surgery,3131 Princeton Pike,Stamford,CT,8648,40.283302,-74.715973,lawrencevilleplasticsurgery.com,(609) 896-2525
+LOC000035,Health Care Facility,Mercer-Bucks Orthopaedics,3120 Princeton Pike ,Stamford,CT,8648,41.12886,-73.399078,mercerbucksortho.com,(609) 896-0444 
+LOC000036,Health Care Facility,Performance Spine & Sports Medicine,4056 Quakerbridge Rd ,Stamford,CT,8648,40.277008,-74.670723,njspineandsports.net1,(609) 588-8600 
+LOC000037,U.S.Miltary,US Naval Weapons Station Earle,201 New Jersey 34,Colts Neck,NJ ,7722,40.087948,-74.041786,cnic.navy.mil,(732) 866-2171
+LOC000038,U.S.Miltary,Fort Dix,17 miles SE of Trenton (POINT(-74.61312 40.004876)),Fort Dix,NJ,8640,40.21788,-74.759399,dix.army.mil,(609) 562-1011 
+LOC000039,U.S.Miltary,US Army Reserve,1501 E Lycoming St,Philadelphia,PA,19124,40.0089,-75.096931,n/a,(215) 333-3043 
+LOC000040,U.S.Miltary,McGuire Air Force Base,3548 Neely Road,Trenton ,NJ,8641,40.033871,-74.609138,afreserve.com,(800) 257-1212
+LOC000041,U.S.Miltary,Naval Support Activity Philadelphia,700 Robbins St,Philadelphia,PA,19111,40.046158,-75.092886,dla.mil,(215) 737-2000
+LOC000042,U.S.Miltary,US Defense Industrial Supply,700 Robbins St,Philadelphia,PA,19111,40.046158,-75.092886,navy.com  ,(215) 697-2000
+LOC000043,U.S.Miltary,Pennsylvania National Guard,2700 Southampton Rd,Philadelphia,PA,19154,40.112213,-74.987816,pa.ng.mil,(215) 856-5900
+LOC000044,U.S.Miltary,US Army Reserve,2150 Nottingham Way,Trenton ,NJ,8619,40.234192,-74.705765,usar.army.mil,(800) 359-8483 
+LOC000045,U.S.Miltary,Army National Guard,151 Eggert Crossing Rd,Lawrenceville,NJ,8648,40.273004,-74.745291,nationalguard.com1,(609) 671-6600
+LOC000046,Bank,Sovereign Bank,2371 New Jersey ,Robbinsville,NJ ,8691,40.19437,-74.599983,sovereignbank.com,(609) 259-3553 
+LOC000047,Bank,PNC Bank,155 Marketplace Blvd,Hamilton Township,NJ,8691,40.191595,74.644344,pnc.com,(609) 581-7910 
+LOC000048,Bank,Chase Bank,525 Marketplace Blvd,Hamilton Township,NJ,8691,40.194834,-74.640595,chase.com,(609) 585-3584 
+LOC000049,Bank,3rd Federal Bank,1850 New Jersey ,Trenton ,NJ,8690,40.219219,-74.732491,thirdfedbank.com,(609) 689-1010
+LOC000050,Bank,Mercer County N J Teachers Federal Credit Union,2271 New Jersey ,Hamilton Township,NJ,8690,40.222675,-74.643727,mcnjtfcu.org,(609) 586-6669
+LOC000051,Bank,Roma Bank,2300 New Jersey ,Robbinsville,NJ ,8691,40.19598,-74.599899,romabank.com,(609) 223-8300
+LOC000052,Bank,Wells Fargo Bank,12 Main St,Robbinsville,NJ ,8691,40.216824,-74.623726,wellsfargo.com,(609) 259-8121
+LOC000053,Bank,TD Bank,2283 New Jersey,Hamilton Township,NJ,8690,40.193357,-74.602993,tdbank.com,(609) 689-9115
+LOC000054,Bank,First Choice Bank,2344 New Jersey ,Robbinsville,NJ ,8691,40.196242,-74.602646,firstchoice-bank.com,(609) 208-1199 
+LOC000055,Public School,Lawrence High School,2525 Princeton Pike,Lawrenceville,NJ ,8648,40.26422,-74.730348,ltps.org,(609) 671-5510
+LOC000056,Public School,Trenton Central High School,400 Chambers St,Trenton ,NJ,8609,40.21981,-74.743301,trenton.k12.nj.us,(609) 278-7260
+LOC000057,Public School,Robbinsville High School,155 Robbinsville Edinburg Rd,Trenton ,NJ,8691,40.237413,-74.61507,wtpsmercer.k12.nj.us,(609) 632-0950 
+LOC000058,Public School,Hightstown High School,25 Leshin Ln,Heightstown ,NJ ,8520,40.25971,74.529753,eastwindsorregionalschools.com,(609) 443-7738 
+LOC000059,Public School,Reynolds Middle School,2145 Yardville-Hamilton Square Rd,Trenton ,NJ,8690,40.22035,-74.661663,hamilton.k12.nj.us,(609) 631-4162 
+LOC000060,Public School,Steinert High School,2900 Klockner Rd,Trenton ,NJ,8609,40.216267,-74.661354,hamilton.k12.nj.us,(609) 631-4150 
+LOC000061,Public School,Crockett Middle School,2631 Kuser Rd,Township ,NJ ,8691,40.206833,-74.646816,hamilton.k12.nj.us,(609) 631-4149
+LOC000062,Public School,Alexander Elementary School,20 Robert Frost Dr,Trenton ,NJ,8690,40.217659,-74.653946,hamilton.k12.nj.us,(609) 631-4148
+LOC000063,Public School,Sharon Elementary School,234 Sharon Rd,Robbinsville,NJ ,8691,40.212959,-74.576401,robbinsville.k12.nj.us,(609) 632-0960 
+LOC000064,Public School,Hightstown High School,25 Leshin Ln,Heightstown ,NJ ,8520,40.25971,-74.529753, eastwindsorregionalschools.com,(609) 443-7738 
+LOC000065,Public School,Allentown High School,27 High St,Allentown ,NJ ,8501,40.175251,-74.594715,ufrsd.net,(609) 259-7292 
+LOC000066,Public School,Burlington Township High School,610 Fountain Ave,Burlington Township,NJ,8016,40.177349,-74.587849,burltwpsch.org,(609) 387-1713 
+LOC000067,Airport,South Jersey Regional,68 Stacy Haines Rd,Lumberton,NJ,8048,39.944981,-74.837685,southjerseyairport.com,(609) 267-3131 
+LOC000068,Airport,Flying W,60 Fostertown Rd,Medford,NJ,8055,39.932831,-74.810226,flyingwairport.com,(609) 267-7673 
+LOC000069,Airport,Redwing Airport,60 Fostertown Rd,Medford,NJ,8055,40.027,-74.6922,n/a,(609) 298-6645 
+LOC000070,Airport,Pemberton Airport 3NJ1,151 N Pemberton Rd,Pemberton,NJ ,8068,39.98384,-74.68378,n/a,(609) 575-7284 
+LOC000071,Airport,Trenton Robbinsville Airport,106 Sharon Rd,Robbinsville,NJ ,8691,40.214226,-74.600609,robbinsvilleairport.com,(609) 259-1059 
+LOC000072,Airport,Trenton-Mercer Airport,1100 Terminal Cir Dr,Ewing Township,NJ,8628,40.27755,-74.818237,state.nj.us,(609) 882-1601 
+LOC000073,Airport,Princeton Airport,41 Airpark Rd,Princeton ,NJ ,8540,40.397041,-74.659309,princetonairport.com,(609) 921-3100 
+LOC000074,Airport,Lakewood Township Airport,1900 Cedarbridge Ave,Lakewood Township ,NJ ,8701,40.065731,-74.17598,lakewoodnj.gov,(732) 363-6400 
+LOC000075,Airport,Central Jersey Regional Airport,1034 Millstone River Rd,Hillsborough Township,NJ,8844,40.525616,-74.591539,centraljerseyairport.com,(908) 526-2822 
+LOC000076,Airport,Old Bridge Airport,,Middlesex,NJ ,8831,40.328018,-74.351563,n/a,(732) 446-0303 
+LOC000077,Federal Court Building,US District Court Clerk,402 E State St ,Trenton ,NJ,8608,40.221447,-74.757408,njd.uscourts.gov,(609) 989-2065 
+LOC000078,County Government,Superior Court-Mercer County,175 S Broad St,Trenton ,NJ,8608,40.217197,-74.764198,judiciary.state.nj.us,(609) 571-4000 
+LOC000079,City Government,City of Trenton: Municipal Courts,225 N Clinton Ave,Trenton ,NJ,8609,40.227222,-74.753937,trentonnj.org,(609) 989-3700 
+LOC000080,City Government,Hamilton Twp Municipal Court,1270 Whitehorse Mercerville Rd,Trenton ,NJ,8619,40.212736,-74.692315,,(609) 581-4072 
+LOC000081,Shopping Mall,Quaker Bridge Mall,150 Quakerbridge Mall,Lawrenceville,NJ ,8648,40.294776,-74.68263,simon.co,(609) 799-8177 
+LOC000082,City Utilities,West Windsor Waterworks,193 Princeton Hightstown Rd ,Princeton Junction,NJ,8550,40.30241,-74.602478,,(609) 799-2400
+LOC000083,City Utilities,TCNJ Civil Engineering Senior Bridge Design Project,2000 Pennington Rd,Ewing Township,NJ,8618,40.271272,-74.783044,tcnjseniorproject.webs.com,(908) 763-4009
+LOC000084,University,Rider University,2083 Lawrenceville Rd,Lawrence Township,NJ ,8648,40.277871,-74.732413,rider.edu,(609) 896-5000 
+LOC000085,University,Strayer University,3150 Brunswick Pike,Trenton ,NJ ,8648,40.28212,-74.690987,strayer.edu,(609) 406-7600 
+LOC000086,University,Institute for Advanced Study,1 Einstein Dr,Princeton,NJ ,8540,40.332867,-74.665822,ias.edu,(609) 734-8000 
+LOC000087,Port Authority,Georgia Ports Authority,333 Thornall St,Edison ,NJ ,8837,40.55927,-74.337354,gaports.com,(732) 549-8100 
+LOC000088,Port Authority,New York Nj Port Authority,5 Teleport Dr,Staten Island ,NY ,10311,40.605076,-74.178276,panynj.gov,(212) 435-3008
+LOC000089,Port Authority,The Port Authority,2777 Goethals Rd N,Staten Island ,NY ,10303,40.628376,-74.181068,panynj.gov,(718) 390-2503 
+LOC000090,Port Authority,Port Authority of New York and New Jersey,225 Park Ave S,New York ,NY ,10003,40.737148,-73.987885,panynj.gov,908-354-4044
+LOC000091,Port Authority,Port Authority of Ny,1 Teleport Dr,Staten Island ,NY ,10311,40.605843,-74.178825,panynj.gov,(718) 477-1371 
+LOC000092,Port Authority,Borough of Conshohocken Athrty,601 E Elm St,Conshohocken,PA,19428,40.073502,-75.295386,conshohockensa.com,(610) 828-0979
+LOC000093,City Utilities,Warwick Township Water and Sewer Authority,1733 Township Green,Jamison,PA,18929,40.24794,-75.095867,wtwsa.org,(215) 343-3584
+LOC000094,County Utilities,Septic Services in Philadelphia / Bucks / Chester / Montgomery PA,Unavailable,Dublin ,PA ,18917,40.431823,-76.296944,pasepticsolutions.com,(267) 566-0487 
+LOC000095,County Utilities,"DeMaio Electrical Company, Inc.",330 Roycefield Rd,Hillsborough Township,NJ,8844,40.533368,-74.640716,demaioelectric.com,(908) 231-8282
+LOC000096,County Utilities,Dynatec Systems,909 Jacksonville Rd,Burlington Township ,NJ ,8016,40.06345,-74.824974,dynatecsystems.com,(609) 387-0330
+LOC000097,County Utilities,Flemington Sewage Treatment,PO Box 387,Flemington ,NJ ,8822,40.569851,-74.813873,flemington-nj.com,(908) 782-4554 
+LOC000098,Toll Plaza,Asbury Park Toll Plaza - Garden State Parkway,New Jersey 444,Tinton Falls ,NJ ,7753,40.299568,-74.092529,state.nj.us,
+LOC000099,Toll Plaza,Delaware River Joint Toll Bridge,110 Woodcrest Rd,Morrisville ,PA ,19067,40.258789,-74.871941,drjtbc.org, (215) 295-5061 
+LOC000100,Toll Plaza,E-Z Pass Services Center,375 McCarter Hwy,Newark  ,NJ ,7114,40.720586,-74.179028,ezpassde.com,(973) 368-1499 
+LOC000101,Toll Plaza,The Parking Spot 2,350 Carnegie Ave,Newark  ,NJ ,7114,40.695887,-74.188604,theparkingspot.com,(973) 624-9000 
+LOC000102,Toll Plaza,Raritan Toll Plaza - Garden State Parkway,Garden State Parkway,Sayreville,NJ ,8879,40.488876,-74.302632,nj.gov,
+LOC000103,Toll Plaza,Expresspark - North Lot Airport Parking,1070 Tinicum Island Rd,Philadelphia ,PA ,19113,39.866841,-75.270033,n/a,(610) 595-0244 
+LOC000104,Electrical Power Station,"Hitachi Power Systems America, Ltd.",645 Martinsville Rd,Basking Ridge ,NJ ,7920,40.650772,-74.577126,hitachipowersystems.us,(908) 605-2800
+LOC000105,Electrical Power Station,Limerick Generating Station,3146 Sanatoga Rd,Pottstown,PA ,19464,40.230551,-75.581229,exeloncorp.com,(800) 483-3220
+LOC000106,Electrical Power Station,"Hitachi Power Systems America, Ltd.",645 Martinsville Rd,Basking Ridge ,NJ ,7920,40.650772,-74.577126,hitachipowersystems.us,908) 605-2800 
+LOC000107,Electrical Power Station,Ppl Generation,6605 Foul Rift Rd,Bangor ,PA ,18013,40.796742,-75.10516,pplweb.com,(610) 498-2282 
+LOC000108,Electrical Power Station,Est Group Inc,2701 Township Line Rd,Hatfield ,PA ,19440,40.299625,-75.306862,estgroup.cwfc.com,(215) 721-1100 
+LOC000109,Electrical Power Station,Holtec International Inc,555 Lincoln Dr W,Marlton,NJ ,8053,39.901913,-74.93705,holtecinternational.com,(856) 797-0900
+LOC000110,Power Parts Manufacturers,Logan Generating Plant,76 Rte 130,Swedesboro,NJ ,8085,39.791412,-75.405037,n/a,(856) 467-2128 
+LOC000111,Electrical Power Station,Exelon Generation Co LLC,300 Exelon Way,Kennett Square,PA ,19348,39.854395,-75.698037,exeloncorp.com,610) 765-5959
+LOC000112,Atomic Energy ,Peach Bottom Atomic Power Station,1848 Lay Rd,Delta ,PA ,17314,39.766207,-76.275452,nrc.gov,(717) 456-7014 
+LOC000113,Electrical Power Station,PSE&G,16 Tremont Ct,Newark ,DE ,19711,39.748035,-75.72702,pseg.com,(302) 235-2349 
+LOC000114,Electrical Power Station,Nickle Electrical Companies,14 Mill Park Ct,Newark ,DE ,19713,39.685993,-75.698845,nickleelectrical.com,(302) 453-4000
+LOC000115,City Fire Station,Plymouth Fire Company #1,1323 Colwell Ln,Conshohocken,PA ,19428,40.089588,-75.302567, plymouthfireco.com,(610) 233-0602
+LOC000116,City Police,Newark Police Department,220 Elkton Rd,Newark ,DE,19711,39.677731,-75.763466,cityofnewarkde.us,302) 366-7104 
+LOC000117,State Police,State Police,3301 Kirkwood Hwy,Wilmington,DE,19808,39.737013,-75.627082,dsp.delaware.gov,(302) 633-5000 
+LOC000118,City Police,Wilmington Police Department,300 N Walnut St,Wilmington,DE,19801,39.738735,-75.548157,ci.wilmington.de.us,302) 654-5151
+LOC000119,City Police,New Castle City Police Department,1 Municipal Blvd,New Castle,DE,19720,39.669941,-75.562233,newcastlepd.us,302) 322-9800 
+LOC000120,County Facilities,Cecil County Detention Center,500 Landing Ln,Elkton ,MD,21921,39.599104,-75.840221,cecilcountysheriff.org,(410) 996-5559 
+LOC000121,City Police,Elkton Police Department,100 Railroad Ave,Elkton ,MD,21921,39.610674,-75.831878,elktonpolicedepartment.org,(410) 398-4200 
+LOC000122,State Auto Inspection ,Motor Vehicle Commission,698 Oak Tree Ave,South Plainfield,NJ,7080,40.577752,-74.394218,state.nj.us,(609) 292-6500
+LOC000123,Auto Gas Station,Maple Shade Lukoil,100 E Kings Hwy,Maple Shade Township,NJ,8052,39.933323,-74.992432,lukoil.com,856) 778-9505 
+LOC000124,Auto Gas Station,Glassboro Lukoil,100 Delsea Dr N,Glassboro,NJ ,8028,39.705389,-75.108028,lukoil.com,856) 881-0112
+LOC000125,Bank,Citizens Bank,40 Chestnut Hill Plaza,Newark,DE,19713,39.662358,-75.723753,citizensbank.com ,(302) 456-7111 
+LOC000126,Bank,PNC Bank,25 Pencader Plaza,Newark,DE,19713,39.659992,-75.735857,pnc.com,302) 733-7170 
+LOC000127,Bank,Wells Fargo Bank,622 S College Ave,Newark,DE,19713,39.660992,-75.752586,wellsfargo.com,(800) 869-3557
+LOC000128,Airport,Newark International Airport,3 Brewster Rd,Newark,NJ ,7114,40.707795,-74.17323,panynj.gov,973) 961-6000 
+LOC000129,Bank,Bank of America,176 South St,Newark,NJ ,7114,40.721919,-74.171004,locators.bankofamerica.com,973) 690-5535 
+LOC000130,Bank,PNC Bank,550 Frelinghuysen Ave,Newark,NJ ,7114,40.702235,-74.19558,pnc.com,973) 639-7100 
+LOC000131,Bank,Newark Currency Services,1 Newark International Airport St,Newark,NJ ,7114,40.748497,-74.18032,n/a,(973) 824-2234 
+LOC000132,Bank,Federal APD,70 Brewster Rd,Newark,NJ ,7114,40.707973,-74.169781,federalapd.com,973) 792-1400 
+LOC000133,Bank,American Airlines FCU,34 Terminal A,Newark,NJ ,7114,40.670567,-74.106621, aacreditunion.org,973) 961-4147 
+LOC000134,Bank,Alliant Credit Union,1 Brewster Rd,Newark,NJ ,7114,40.707794,-74.173241,alliantcreditunion.org,800) 328-1935 
+LOC000135,Bank,ATM (Swift Fuel),344 Brewster Rd,Newark,NJ ,7114,40.707694,-74.162399,cardtronics.com,n/a
+LOC000136,University,Seton Hall University,400 S Orange Ave,South Orange ,NJ ,7079,40.744634,-74.247389,shu.edu,973) 761-9000 
+LOC000137,University,Montclair State University,1 Normal Ave,Montclair ,NJ ,7043,40.857235,-74.198475,montclair.edu,(973) 655-4000 
+LOC000138,University,Rutgers-Newark,249 University Ave,Newark,NJ ,7102,40.739186,-74.175157,rutgers.edu,(973) 353-1766 
+LOC000139,University,Kean University,1000 Morris Ave,Union,NJ ,7083,40.678486,-74.234306,kean.edu,(908) 737-5326 
+LOC000140,Medical School,New Jersey Medical School,185 S Orange Ave,Newark,NJ ,7103,40.738677,-74.190268,njms.umdnj.edu,(973) 972-4538 
+LOC000141,Public School,Newark Public Schools,2 Cedar St ,Newark,NJ ,7102,40.737987,-74.170975,nps.k12.nj.us,(973) 733-7360 
+LOC000142,Public School,Malcolm X Shabazz High School,80 Johnson Road,Newark,NJ ,7108,40.719604,-74.192457,http://www.nps.k12.nj.us/sha,(973) 733-6760 
+LOC000143,Public School,Lafayette Street Elementary School,205 Lafayette Street,Newark,NJ ,7105,40.729562,-74.163763,http://www.nps.k12.nj.us/,(973) 465-4860 
+LOC000144,Public School,Weequahic High School,279 Chancellor Ave,Newark,NJ ,7112,40.708668,-74.219957,http://www.nps.k12.nj.us/,(973) 705-3900 
+LOC000145,Public School,West Side High School,403 S Orange Ave,Newark,NJ ,7103,40.741066,-74.202959, ci.newark.nj.us,973) 733-6977 
+LOC000146,City Utilities,Passaic Valley Sewerage Commission,600 Wilson Ave,Newark,NJ ,7105,40.714765,-74.13612,nj.gov,(973) 344-1800 
+LOC000147,Utility Production,Raleia Inc,86 Warwick Rd,Hillside ,NJ ,7205,40.688812,-74.23539,n/a,(908) 354-7465 
+LOC000148,Hotel,Best Western Plus Newark Airport West,101 International Way,Newark,NJ ,7114,40.688812,-74.23539,bestwestern.com,(973) 621-6200 
+LOC000149,Hotel,Knights Inn Newark Airport Elizabeth,178 Spring St,Elizabeth ,NJ ,7201,40.665083,-74.205245,knightsinn.com,(908) 353-3030 
+LOC000150,Hotel,DoubleTree by Hilton Hotel Newark Airport,128 Frontage Rd,Newark,NJ ,7114,40.711875,-74.163519,doubletree3.hilton.com,(973) 690-5500 
+LOC000151,Rail,NS Thoroughbred Bulk Transfer Terminal,123 Dowd Ave,Elizabeth ,NJ ,7206,40.658112,-74.18477,nscorp.com,888) 928-7727 
+LOC000152,Rail,Amtrak Station - EWR,72 S Clinton Ave,Trenton ,NJ ,7114,40.225884,-74.772697,amtrak.com,(800) 872-7245 
+LOC000153,Rail,Progress Rail Services ,2380 Tripoli St,Elizabeth ,NJ ,7201,40.673125,-74.157436,progressrail.com,(908) 353-2222 
+LOC000154,Rail,Amtrak Station-MET,100 Middlesex Essex Turnpike,Iselin,NJ ,8830,40.5681,-74.327266,amtrak.com,(800) 872-7245 
+LOC000155,Rail,"Amtrak New Brunswick, NJ-NBK",1 County Road 527,New Brunswick,NJ ,8901,40.50145,-74.458069,amtrak.com,800) 872-7245 
+LOC000156,Health Care Facility,Newark Community Health Center Inc,101 Ludlow St,Newark,NJ,7114,40.689824,-74.205252,nchcfqhc.org,973) 565-0355 
+LOC000157,Hospital,Trinitas Regional Medical Center,655 E Jersey St,Elizabethport,NJ,7206,40.658957,-74.198,trinitasrmc.org,908) 994-7000 
+LOC000158,Hospital,Saint Michael's Medical Center,111 Central Ave,Newark,NJ,7102,40.743221,-74.174263,smmcnj.org,973) 877-5000 
+LOC000159,Hospital,Clara Maass Medical Center,1 Clara Maass Dr,,NJ,7109,40.784173,-74.176172,barnabashealth.org,973) 450-2000 
+LOC000160,Hospital,Childrens Specialized Hospital,3575 Quakerbridge Rd,,NJ,8619,40.257512,-74.678968,childrens-specialized.org,609) 631-2800 
+LOC000161,Airport,Trenton Mercer Airport ,1100 Terminal Circle Drive ,,NJ,8628,40.276697,-74.818355,www.state.nj.us/counties/mercer/departments/airport/contact.html,(609) 882-1601
+LOC000162,Airport,Trenton Robbinsville Airport,106 Sharon Road Robbinsville,,NJ,8691,40.214226,-74.600609,http://www.robbinsvilleairport.com/,(609) 259-1059
+LOC000163,Electrical Power Station,Ocean Power Technologies,1590 Reed Rd,,NJ,8534,40.297695,-74.79467,oceanpowertechnologies.com,(609) 730-0400 
+LOC000164,Electrical Power Station,PLCCenter.com,111 Mt Holly Bypass,,NJ,8048,39.973201,-74.803135,plccenter.com,609) 288-9393 
+LOC000165,Electrical Power Station,Parlin Power Plant,790 Washington Rd,,NJ,8859,40.458614,-74.326378, ge.com,732) 238-8633 
+LOC000166,Electrical Power Station,NWL Transformers Inc,312 Rising Sun Rd,Bordentown,NJ,8505,40.119991,-74.714653,nwl.com,609) 298-7300 
+LOC000167,Shopping Mall,Quaker Bridge Mall,150 Quakerbridge Mall,,NJ,8648,40.294512,-74.682234,simon.com,(609) 799-8177 
+LOC000168,Shopping Mall,Lawrence Shopping Center,2495 Brunswick Ave,,NJ,8648,40.259018,-74.728416,n/a,609) 620-1011 
+LOC000169,Shopping Mall,Hopewell Crossing Shopping Center,800 Denow Rd Ste T,Pennington,NJ,8534,40.30074,-74.779357,n/a,609-818-0563
+LOC000170,Shopping Mall,Clover Square,3100 Quakerbridge Rd,Trenton ,NJ,8619,40.246534,-74.686648,n/a,n/a
+LOC000171,Shopping Mall,MarketFair,3535 U.S. 1,Princeton,NJ,8540,40.314309,-74.658768,marketfairmall.com,609) 452-7777 
+LOC000172,State Government Projects,TCNJ Civil Engineering Senior Bridge Design Project,2000 Pennington Rd,,NJ,8618,40.271272,-74.783044,tcnjseniorproject.webs.com,(908) 763-4009 
+LOC000173,State Police,State Police,1 River Rd,,NJ,8628,40.275082,74.852692,njsp.org,609) 882-2000 
+LOC000174,State DOT,New Jersey Department of Transportation,Parkway Ave ,Ewing Township,NJ,8618,40.245381,-74.783865,dot.gov,609) 530-2103 
+LOC000175,StatePolice,Nj State Police,278 Prospect Plains Rd,,NJ,8512,40.326645,-74.482666,njsp.org,973) 344-1704 
+LOC000176,State Lottery,Lottery Commission,1 Lawn Park Ave,Trenton ,NJ,8648,40.26341,-74.740761,njlottery.net,(609) 599-5875 
+LOC000177,Medical Facility,Ann Klein Forensic Center,Stuyvesant Ave,West Trenton,NJ,8628,40.246478,-74.799638, nj.gov,609) 633-0900 
+LOC000178,U. S. Military Facility,Army National Guard Aviation,152 Scotch Rd,West Trenton,NJ,8628,40.273254,-74.802681,nj.gov,(609) 530-4251 
+LOC000179,U. S. Military Facility,Shipyard Shops,1000 S Madison St,Wilmington,De,19801,,,shipyardshopsoutlets.com,302) 888-4562 
+LOC000180,Historic Military Facilty,Ft Delaware,6615 New York 97,New Castle ,DE,12764,39.59,-75.571945,n/a,n/a
+LOC000181,U. S. Military Facility,US Marine Corps Training,3920 Kirkwood Hwy,Wilmington,DE,19808,39.7286,-75.646477,marines.mil,302) 998-6695 
+LOC000182,U. S. Military Facility,Delaware National Guard,1st Regiment Rd,,DE,19808,39.733681,-75.667809,delawarenationalguard.com,302) 854-7024 
+LOC000183,U. S. Military Facility,Air National Guard,2600 Spruance Dr,New Castle,DE,19720,39.689536,-75.603171,goang.com,302) 323-3444 
+LOC000184,U. S. Military Facility,Air Force Recruiter,Newark Shopping Center,Newark,DE,19711,39.685532,-75.743759,airforce.com,302) 731-1014 
+LOC000185,Public School,Bayard Middle School,200 S Dupont St,,DE,19805,39.74321,-75.571754,bayardms.org,302-429-4118
+LOC000186,Public School,Howard High School of Tech,401 E 12th St,,DE,19801,39.745625,-75.542433,howard.nccvt.k12.de.us,(302) 571-5400 
+LOC000187,Public School,Highlands Elementary School,2100 Gilpin Ave,,DE,19806,39.762043,-75.566063,highlands.redclay.k12.de.us,302-651-2715
+LOC000188,Public School,Shortlidge (Evan G.) Academy,100 W 18th St,,DE,19802,39.752136,-75.544998,n/a Kindergarten,(302) 651-2710 
+LOC000189,Public School,Brandywine High School,1400 Foulk Rd,,DE,19803,39.798794,-75.520432,brandywineschools.org,302-479-1600
+LOC000190,Public School,Mount Pleasant High School,5201 Washington Street Extension,,DE,19809,39.772957,-75.504669,brandywineschools.org,302-762-7125
+LOC000191,Public School,Cab Calloway School of the Arts,100 N Dupont Rd,Wilmington,DE,19805,39.743017,-75.589267,cabcallowayschools.com,302-651-2700
+LOC000192,Public School,First State School,501 W 14th St,,DE,19801,39.750614,-75.550446,christiancare.org,302-428-5848
+LOC000193,Public School,A. I. DuPont Middle School,50 Hillside Rd,Wilmington,DE,19807,39.776745,-75.600266,redclay.k12.de.us,302-651-2626
+LOC000194,Public School,Christina School District,600 N Lombard St,Wilmington,DE,19801,39.739972,-75.545078,christina.k12.de.us,302-552-2600
+LOC000195,Bank,Barclay's,125 S West St,,DE,19801,39.737915,-75.556942,barclaycardus.com,302) 622-8990 
+LOC000196,Bank,Juniper Bank,125 S West St,,DE,19801,39.737915,-75.556942, juniper.com,877) 523-0478 
+LOC000197,Bank,Bank of America,1100 N King St,,DE,19884,39.746231,-75.546217,locators.bankofamerica.com,302) 765-2108 
+LOC000198,Bank,DEXSTA Federal Credit Union,300 Foulk Rd,Wilimington,DE,19893,39.780956,-75.540367,dexsta.com,302) 571-0522 
+LOC000199,Bank,WSFS Bank,500 Delaware Ave,Wilmington,DE,19801,39.747974,-75.552025,wsfsbank.com,(302) 571-7080 
+LOC000200,Bank,Wells Fargo Bank,100 W 10th St,Wilmington,DE,19801,39.745735,-75.54882,wellsfargo.com,(302) 622-3350 
+LOC000201,Bank,TD Bank,300 Delaware Ave,Wilmington,DE,19801,39.746548,-75.550514,tdbanl.com,302) 655-5031 
+LOC000202,Bank,Citizens Bank,919 N Market St,Wilmington,DE,19801,39.745445,-75.548248,citizensbank.com,302) 421-2229 
+LOC000203,Bank,HSBC Bank,1105 N Market St ,Wilmington,DE,19801,39.747276,-75.547188,us.hsbc.com,800) 975-4722 
+LOC000204,University,Wilmington University,320 N Dupont Hwy ,New Castle,DE,19720,39.682079,-75.586487,wilmu.edu,302) 356-4636 
+LOC000205,University,University of Delaware - Wilmington Campus,2700 Pennsylvania Ave,Wilmington,DE,19806,39.761345,-75.577682,udel.edu,302) 573-4417 
+LOC000206,University,Springfield College School of Human Services,1007 N Orange St ,Wilmington,DE,19801,39.746773,-75.549309,spfldcol.edu,302) 658-5720 
+LOC000207,University,Widener University School of Law,4601 Concord Pike,,DE,19803,39.817223,-75.546219,law.widener.edu,302) 477-2162 
+LOC000208,University,The Music School of Delaware,4101 N Washington St,,DE,19802,39.764454,-75.52462,musicschoolofdelaware.org,302) 762-1132 
+LOC000209,University,University of Delaware - Wilmington Campus,2700 Pennsylvania Ave,,DE,19806,39.761345,-75.577682,udel.edu,302) 573-4417 
+LOC000210,University,Dawn Career Institute,3700 Lancaster Pike,,DE,19805,39.754944,-75.594706,dawncareerinstitute.edu,302) 633-9075 
+LOC000211,University,Wilmington University,320 N Dupont Hwy,New Castle,DE,19720,39.682079,-75.586487,wilmu.edu,302) 356-4636 
+LOC000212,University,Barbizon Modeling & Acting Center,17B Trolley Square,Wilmington,DE,19806,39.758111,-75.561707,barbizonmodeling.com,302) 658-6666 
+LOC000213,University,Springfield College School of Human Services,1007 N Orange St ,Wilmington,DE,19801,39.746773,-75.549309,spfldcol.edu,302) 658-5720 
+LOC000214,Airport,New Castle Airport,151 N Dupont Hwy,New Castle,DE,19720,39.672815,-75.597601,newcastleairportilg.com,(302) 325-5124 
+LOC000215,Hotel,Marriott,115 Curtis Ave,,DE,19804,39.722965,-75.597794,marriott.com,302) 668-1461 
+LOC000216,Hotel,Fairview Inn,1051 S Market St,,DE,19801,39.721771,-75.555695,n/a,(302) 656-9431 
+LOC000217,Hotel,DoubleTree by Hilton Hotel Downtown Wilmington - Legal District,700 N King St,,DE,19801,39.742392,-75.548829,wilmingtondehotel.com,302) 655-0400 
+LOC000218,Hotel,Marriott-Execustay,902 N Market St,,DE,19801,39.744793,-75.548283,execustay.com,
+LOC000219,Hotel,Hotel du Pont,42 W 11th St,,DE,19801,39.746681,-75.547701,hoteldupont.com,302) 594-3100 
+LOC000220,Hotel,Sheraton Suites Wilmington Downtown,422 Delaware Ave,Wilmington,DE,19801,39.747341,-75.551331, sheratonsuiteswilmington.com,302) 654-8300 
+LOC000221,Federal Facility,US Post Office,500 Delaware Ave ,,DE,19801,39.747974,-75.552025,usps.com,302) 656-0228 
+LOC000222,Federal Facility,US Post Office,1500 Lancaster Ave,,DE,19805,39.744405,-75.568598,usps.com,(302) 6540725 
+LOC000223,Federal Government Agency,National Security Agency,9800 Savage Rd,Fort Meade,MD,20755,39.11173,-76.772643,nsa.gov,301) 688-6524 
+LOC000224,Federal Government Agency,US Naval Criminal Invstgtv,40 S Gay St,,MD,21202,39.288204,-76.609306,n/a,410) 962-0953 
+LOC000225,U. S. Military Facility,Military Department Recruiter,2620 Winchester St,Baltimore,MD,21216,39.302193,-76.659775,n/a,(410) 566-2382 
+LOC000226,U. S. Military Facility,Maryland National Guard,219 29th Division St,,MD,21201,39.303702,76.622098,md.ngb.army.mil,410) 576-6000 
+LOC000227,Federal Government Agency,Adjutant General,29 Division St,Baltimore,MD,21201,39.303208,-76.622724,n/a,410) 576-6097 
+LOC000228,U. S. Military Facility,US Army Reserve Center,1900 Broening Hwy,,MD,21224,39.270603,76.543854,n/a,410) 631-7733
+LOC000229,U. S. Military Facility,Army-Air Force Exchange Service,2790 MacArthur Rd,,MD,20755,39.108032,-76.73918,shopmyexchange.com,301) 677-7695 
+LOC000230,U. S. Military Facility,Pikesville Armory,610 Reisterstown Rd,Pikesville,MD,21208,39.369305,-76.718536,n/a,n/a
+LOC000231,U. S. Military Facility,Fort Detrick,810 Schreider St ,Frederick,MD,21702,39.434767,-77.42772, detrick.army.mil,301) 619-2018 
+LOC000232,U. S. Military Facility,US Army Reserve Depot,700 E Ordnance Rd,Glen Burnie,MD,21060,39.195656,-76.584709, usar.army.mil,n/a
+LOC000233,Bank,1st Mariner Bank,1501 S Clinton St,Baltimore,MD,21224,39.275429,-76.568771,1stmarinerbank.com,443) 573-4800 
+LOC000234,Bank,PNC Bank,3600 Boston St,,MD,21224,39.278095,-76.566162,pnc.com,410) 276-2401 
+LOC000235,Bank,Wells Fargo Bank,4820 Eastern Ave,,MD,21224,39.28738,-76.555206,wellsfargo.com,410) 342-1131 
+LOC000236,Bank,M&T Bank,3800 E Lombard St,,MD,21224,39.292049,-76.564507,n/a,410) 342-5100
+LOC000237,Bank,MECU -Dundalk Branch,7220 Holabird Ave,,MD,21222,39.272949,-76.516029,mecu.com,800) 248-6328 
+LOC000238,City Government Agency,Baltimore City Health Dept,1515 W North Ave ,Baltimore,MD,21217,39.309776,-76.641441,http://www.baltimorecity.go,410) 396-0176   
+LOC000239,City Government Agency,Baltimore Metropolitan Council,1500 Whetstone Way,Baltimore,MD,21230,39.269804,76.59944,baltometro.org,410) 732-0500 
+LOC000240,University,Johns Hopkins University,5501 Hopkins Bayview Cir,Baltimore,MD,21224,39.289849,-76.548266,jhu.edu,410) 550-0572 
+LOC000241,Public School,Dundalk High School,1901 Delvale Ave,,MD,21222,39.269833,-76.51432,dundalkhs.bcps.org,410) 887-7023 
+LOC000242,Public School,Holabird Elementary School,1500 Imla St,,MD,21224,39.275692,-76.538948,baltimorecityschools.org,410) 396-9086 
+LOC000243,Public School,Highlandtown Elementary School,3223 E Pratt St,,MD,21224,39.290119,76.570745,baltimorecityschools.org,410) 396-9381 
+LOC000244,Public School,Claremont School,5301 Erdman Avenue,Baltimore,MD,21205,39.301987,-76.554138,bcps.org,410-545-3380
+LOC000245,Federal Facility,National Defense University,300 5th Ave SE,Washington,DC,20319,38.863275,-77.015394,ndu.edu,(202) 685-3140 
+LOC000246,University,Georgetown University Law Center,600 New Jersey Ave NW,,DC,20001,38.898185,-77.01218,law.georgetown.edu,202) 662-9000 
+LOC000247,University,Carnegie Mellon University,1200 New York Ave NW ,,DC,20005,38.900188,-77.028419, cmu.edu,202) 326-6238 
+LOC000248,University,Georgetown University,3700 O St NW,,DC,20057,38.908318,-77.073624,georgetown.edu,202) 687-0100 
+LOC000249,Airport,Potomac Airfield,10300 Glen Way,,DC,20744,38.748764,-76.95575,potomac-airfield.com,301) 248-5720 
+LOC000250,Airport,Ronald Reagan Washington National Airport,2401 S Smith Blvd,,DC,22202,38.853771,-77.043834,mwaa.com,703) 417-8000 
+LOC000251,U. S. Military Facility,Davison AAF,6970 Britton Dr,Fort Belvior,DC,22060,38.710648,-77.158485,www.airport-data.com/airport/DAA,703-664-1201:
+LOC000252,Airport,Bolling Field,20 MacDill Blvd,Washington,DC,20032,38.846715,-77.018729,www.airfields-freeman.com/DC/Airfields_DC.htm,703) 545-6700
+LOC000253,Airport,Washington Executive Airport,10399 Piscataway Rd,Clinton,MD,20735,38.747674,-76.931985,hydefield.com,301) 297-7388 
+LOC000254,U. S. Federal Agency,United States Department of Agriculture,1400 Independence Ave SW,,MD,20250,38.887582,-77.032144,fsa.usda.gov,202) 720-2791 
+LOC000255,U. S. Federal Building,Library of Congress, 101 Independence Ave SE,,MD,20540,38.88681,-77.004707,loc.gov,202) 707-5000 
+LOC000256,U. S. Federal Agency,The U.S. Department of State's Bureau of Overseas Buildings Operations,1701 Fort Myer Dr,Arlington,VA,22209,38.894283,-77.071465,state.gov,703) 875-6361 
+LOC000257,U. S. Federal Building,Smithsonian Institution,1000 Jefferson Dr SW ,,DC,20004,38.889045,-77.02632,http://www.si.edu/,(202) 633-1000
+LOC000258,Bank,Bank of America,600 N Washington St,Alexandria ,VA ,22314,38.810955,-77.046066,locators.bankofamerica.com,703) 838-5920 
+LOC000259,Bank,Wells Fargo Bank,330 N Washington St,Alexandria ,VA ,22314,38.808235,-77.046753,wellsfargo.com,703) 739-3400 
+LOC000260,Bank,SunTrust,515 King St,Alexandria ,VA ,22314,38.80518,-77.045372,suntrust.com,703) 838-3031 
+LOC000261,Bank,PNC Bank,411 King St,Alexandria ,VA ,22314,38.805237,-77.04409,pnc.com,703) 706-4900 
+LOC000262,Bank,Burke & Herbert Bank (Main Office),100 S Fairfax St,Alexandria ,VA ,22314,38.804365,-77.042569,burkeandherbertbank.com,(703) 684-1655 
+LOC000263,Bank,TD Bank,119 S Washington St,Alexandria ,VA ,22314,38.804184,-77.047424,tdbank.com,703) 682-6140 
+LOC000264,Bank,United Bank,301 S Washington St,Alexandria ,VA ,22314,38.802631,-77.047836,unitedbank-wv.com,703) 739-5700 
+LOC000265,Bank,BB&T,300 S Washington St,Alexandria ,VA ,22314,38.802517,-77.047157,bbt.com,703) 535-1135 
+LOC000266,Bank,Capital One Bank - Old Towne,500 S Washington St,Alexandria ,VA ,22314,38.799995,-77.047737,maps.capitalone.com,(703) 838-3655 
+LOC000267,Bank,M&T Bank,833 S Washington St,Alexandria ,VA ,22314,38.796588,-77.048781,mtb.com,703) 519-6350 
+LOC000268,Subway Station,Braddock Road Metro Station,700 N West St,,VA ,22314,38.812995,-77.053109, wmata.com,202) 962-1234 
+LOC000269,Subway Station,Amtrak Station-ALX,110 Callahan Dr,Alexandria,VA ,22301,38.806156,-77.063019,amtrak.com,800) 872-7245 
+LOC000270,Train Station,Alexandria VRE,110 Callahan Dr,,VA ,22301,38.806721,-77.062782,vre.org,(703) 684-1001
+LOC000271,Subway Station,Union Station,50 Massachusetts Ave NE,,VA ,20002,38.897503,-77.00621,unionstationdc.com,202) 289-1908 
+LOC000272,Subway Station,Franconia-Springfield,6880 Frontier Drive,Springfield,VA ,22150,38.770053,-77.170983,vre.org,(703) 684-1001
+LOC000273,Subway Station,Huntington Metro Station,2509 Huntington Ave,,VA ,22303,38.795555,77.075966, wmata.com,202) 637-7000 
+LOC000274,Hotel,Spring Hill Suites Alexandria Old Town/Southwest,2950 Eisenhower Ave,,VA ,22314,38.802433,-77.084152,starwoodhotels.com, (301) 749-9000 
+LOC000275,Hotel,Gaylord National Resort and Convention Center,201 Waterfront St,Oxon Hill,MD,20745,38.783134,-77.017367,wyndhamvacationresorts.com,301) 265-4200 
+LOC000276,Hotel,Wyndham Vacation Resorts At National Harbor,250 Mariner Passage,,MD,20745,38.783413,-77.014404,westinnationalharbor.com,301) 567-3999 
+LOC000277,Hotel,The Westin Washington National Harbor,171 Waterfront St,,MD,20745,38.783926,-77.016938,hamptoninn.hilton.com,703) 329-1400 
+LOC000278,Hotel,Aloft Washington National Harbor,156 Waterfront St,,MD,20745,38.78452,77.016484,monaco-alexandria.com,703) 549-6080 
+LOC000279,Hotel,Hampton Inn & Suites Alexandria Old Town Area South,5821 Richmond Hwy,Alexandria,VA,22303,38.791393,-77.05728,sheratonsuitesalexandria.com,703) 836-4700 
+LOC000280,Hotel,Hotel Monaco Alexandria,480 King St,,VA,22314,38.804367,-77.044266,morrisonhouse.com,703) 838-8000 
+LOC000281,Hotel,Morrison House,116 S Alfred St,,VA,22314,38.80463,-77.049019,lorienhotelandspa.com,703) 894-3434 
+LOC000282,Hotel,LORIEN hotel & spa,1600 King St,,VA,22314,38.805981,-77.056854,marriott.com,800) 627-7468 
+LOC000283,Hotel,Sheraton Suites Old Town Alexandria,801 N St Asaph St,,VA,22314,38.813164,-77.043503,marriott.com,888) 287-9400 
+LOC000284,Public School,Mary Church Terrell Elementary,3301 Wheeler Rd,,VA,20032,38.842154,-76.993937,dc.gov,202) 645-3740 
+LOC000285,Public School,Ballou STAY High School,3401 4th St SE,,VA,20032,38.840243,-77.00056,profiles.dcps.dc.gov,202) 645-3400 
+LOC000286,Public School,Mount Vernon School,2601 Commonwealth Ave,Alexandria,VA,22305,38.828389,-77.060618,acps.k12.va.us/mason,703-706-4470
+LOC000287,Public School,George Washington Middle School,1005 Mt Vernon Ave,,VA,22301,38.815765,-77.055222,acps.k12.va.us,703) 706-4500 
+LOC000288,Public School,Oxon Hill High School,6701 Leyte Dr,,VA,20745,38.797249,-76.99369, pgcps.org,301) 749-4300 
+LOC000289,Public School,Lyles-Crouch Traditional Academy,530 South Saint Asaph Street,Alexandria ,VA,22314,38.799725,-77.04637,acps.k12.va.us,703-706-4430
+LOC000290,Public School,Mount Eagle Elementary School,6116 N Kings Hwy,,VA,22303,38.785069,-77.078987,fcps.edu,703) 721-2100 
+LOC000291,Public School,West Potomac High School,6500 Quander Rd,Alexandria,VA,22307,38.775055,-77.072426,fcps.edu,703) 718-2500 
+LOC000292,Public School,Bryant Alternative High School,2709 Popkins Ln,,VA,22306,38.762951,-77.079704,commweb.fcps.edu,703) 660-2000 
+LOC000293,Public School,Friendly High School,10000 Allentown Rd,Ft Washington,MD,20744,38.750786,-76.969658, pgcps.org,301) 449-4900 
+LOC000294,Cell Tower,Cell Phone Stores/Towers IN D. C. AREA,1100 S Hayes St,Arlington,VA,22202,38.864281,-77.059052,n/a,n/a
+LOC000295,Cell Tower,Cell Phone Stores/Towers IN D. C. AREA,1314 F St NW,Washington,DC,20004,38.897327,-77.030038,n/a,n/a
+LOC000296,Cell Tower,Cell Phone Stores/Towers IN D. C. AREA,40 Massachusetts Ave NE,Washington,DC,20002,38.896936,-77.00669,n/a,n/a
+LOC000297,Cell Tower,Cell Phone Stores/Towers IN D. C. AREA,1736 L St NW,Washington,DC,20036,38.903747,-77.040461,n/a,n/a
+LOC000298,Cell Tower,Towson Town Center,825 Dulaney Valley Rd,Towson,MD,21204,39.40416,-76.599434,n/a,
+LOC000299,Cell Tower,Baltimore City (Store),1002 Fleet St,Baltimore,MD,21231,39.28425,-76.600096,n/a,4105285421
+LOC000300,Cell Tower,Governor Plaza Shopping Center,6711 Ritchie Hwy,Glen Burnie,MD,21061,39.190037,-76.612839,n/a,4107605192
+LOC000301,Cell Tower,Marley Station (Store),7900 Ritchie Hwy,Glen Burnie,MD,21061,39.140568,-76.602959,n/a,4107687100
+LOC000302,Cell Tower,White Marsh (Store),8149 Honeygo Blvd,Nottingham,MD,21236,39.372144,-76.464214,n/a,4109333900
+LOC000303,Cell Tower,Cell Phone Stores/Towers IN PHILADELPHIA AREA,2217 Bristol Pike,Bensalem,PA,19020,40.07729,-74.950386,n/a,n/a
+LOC000304,Cell Tower,Cell Phone Stores/Towers IN PHILADELPHIA AREA,2383 Cottman Ave,Philadelphia,PA,19149,40.047068,-75.058808,n/a,n/a
+LOC000305,Cell Tower,Cell Phone Stores/Towers IN PHILADELPHIA AREA,4000 Monument Rd,Philadelphia,PA,19131,40.007002,-75.213646,n/a,n/a
+LOC000306,Cell Tower,Cell Phone Stores/Towers IN PHILADELPHIA AREA,1750 Deptford Center Rd,Deptford Township,NJ,8096,39.829285,-75.098503,n/a,n/a
+LOC000307,Cell Tower,Cell Phone Stores/Towers IN PHILADELPHIA AREA,901 Haddonfield Rd,Cherry Hill,NJ,8002,39.925914,-75.032789,n/a,n/a
+LOC000308,Cell Tower,Cell Phone Stores/Towers IN PHILADELPHIA AREA,1700 Market St,Philadelphia,PA,19103,39.95307,-75.16917,n/a,n/a
+LOC000309,Cell Tower,Reading Terminal Market,51 N 12th St,Philadelphia,PA,19107,39.953197,-75.15959,readingterminalmarket.org,(215) 922-2317 
+LOC000310,Cell Tower,Oxford Valley Mall,2300 E Lincoln Hwy,Langhorne,PA ,19047,40.179094,-74.879834,n/a,n/a
+LOC000311,Cell Tower,Garden State Plaza Mall,1 Garden State Plaza Blvd,Paramus,NJ,7652,40.914845,-74.078889,n/a,2012919795
+LOC000312,Cell Tower,"CELL PHONE TOWERS IN TRENTON, NJ AREAS",341 New Jersey ,Teaneck,NJ,7666,40.873951,-73.996162,n/a,201-343-8507
+LOC000313,Cell Tower,"CELL PHONE TOWERS IN TRENTON, NJ AREAS",US Highway 6,Totowa,NJ,7666,40.873951,-73.996162,n/a,201-343-8507
+LOC000314,Cell Tower,"CELL PHONE TOWERS IN TRENTON, NJ AREAS",2151 Lemoine Ave,Fort Lee,NJ,7024,40.855984,-73.967093,n/a,201-696-4790
+LOC000315,Cell Tower,Bryant Park,125 W 42nd St,New York ,NY ,10036,40.755216,-73.985011,n/a,2123823746
+LOC000316,Cell Tower,34th street,134 W 34th St,New York ,NY ,10001,40.75021,-73.989502,n/a,9173518000
+LOC000317,Cell Tower,5th Street Store,139 5th Ave,New York ,NY ,10010,40.739761,-73.990372,n/a,2127807420
+LOC000318,Cell Tower,Union Square,859 Broadway,New York ,NY ,10003,40.737415,-73.990532,n/a,2122067587
+LOC000319,Cell Tower,Soho Store,581 W Broadway,New York ,NY ,10012,40.626759,-74.114922,n/a,2124314613
+LOC000320,Cell Tower,Canal Street Store,277 Canal St,New York ,NY ,10013,40.719113,-74.001482,n/a,9172371630
+LOC000321,Cell Tower,Wall Street Store,100 Wall St,New York ,NY ,10005,40.705238,-74.006729,n/a,2125106160
+LOC000322,Cell Tower,Montague Street,146 Montague St,New York ,NY ,11201,40.69434,-73.993515,n/a,7182464117
+LOC000323,Cell Tower,Atlantic Terminal Store,139 Flatbush Ave,New York ,NY ,11217,40.684403,-73.9777,n/a,7186236809
+LOC000324,Cell Tower,Hylan Blvd ,2502 Hylan Blvd,New York ,NY ,10306,40.570019,-74.109535,n/a,7189877454
+LOC000325,Cell Tower,CELL PHONE TOWERS IN  NEW YORK CITY AREA,4251 Broadway,New York ,NY ,10033,40.849862,-73.936009,n/a,212-781-6034
+LOC000326,Cell Tower,CELL PHONE TOWERS IN  NEW YORK CITY AREA,153 E Fordham Rd,Bronx,NY ,10468,40.862414,-73.897733,n/a,7187332292
+LOC000327,Cell Tower,CELL PHONE TOWERS IN  NEW YORK CITY AREA,2150 White Plains Rd,Bronx,NY ,10467,40.854958,-73.867685,n/a,7188293179
+LOC000328,Cell Tower,80th & Broadway Store,2239 Broadway,New York ,NY ,10024,40.78445,-73.979658,n/a,2127128040
+LOC000329,Cell Tower,86th Street,157 E 86th St,New York ,NY ,10028,40.779446,-73.954735,n/a,9174922583
+LOC000330,Cell Tower,CELL PHONE TOWERS IN  NEW YORK CITY AREA,1187 3rd Ave,New York ,NY ,10021,40.76793,-73.961932,n/a,2126064700
+LOC000331,Cell Tower,CELL PHONE TOWERS IN  NEW YORK CITY AREA,9813 3rd Ave,New York ,NY ,10022,40.61438,-74.03489,n/a,2127590201
+LOC000332,Cell Tower,CELL PHONE TOWERS IN  NEW YORK CITY AREA,57 W 57th St,New York ,NY ,10019,40.764041,-73.976501,n/a,2129804860
+LOC000333,Cell Tower,CELL PHONE TOWERS IN  NEW YORK CITY AREA,420 Lexington Ave,New York ,NY ,10017,40.752705,-73.975853,n/a,2124016975
+LOC000334,Cell Tower,Staten Island South (Store),2945 Veterans Rd W,Staten Island ,NY ,10309,40.52792,-74.234174,n/a,7189843687
+LOC000335,Cell Tower,Staten Island Store,2791 Richmond Ave,Staten Island ,NY ,10314,40.579543,-74.169338,n/a,7189824980
+LOC000336,Cell Tower,Staten Island Mall,2655 Richmond Ave,Staten Island ,NY ,10314,40.581348,-74.16909,n/a,7183704980
+LOC000337,Cell Tower,Hylan Commons,2502 Hylan Blvd,Staten Island ,NY ,10306,40.570019,-74.109535,n/a,7189877454
+LOC000338,Cell Tower,Hamilton Marketplace (Store),149 Marketplace Blvd,Hamilton Township,NJ,8691,40.191525,-74.644317,ddr.com,609-581-6040
+LOC000339,Cell Tower,Sunglass Hut AT&T,302 Woodbridge Center Dr,Woodbridge Township,NJ,7095,40.555165,-74.302226,,7323267500
+LOC000340,Cell Tower,Harmon Commons-Secaucus 11 (Store),200 Mill Creek Dr,Secaucus,NJ,7094,40.791631,-74.050284,n/a,n/a
+LOC000341,Cell Tower,Hoboken Store,93 Washington St,Hoboken ,NJ,7030,40.737095,-74.03064,n/a,2016562870
+LOC000342,Cell Tower,Clifton Store,382 New Jersey,Clifton,NJ,7014,40.720776,-74.178204,n/a,9737789059
+LOC000343,Cell Tower,Jersey City-Newport Centre,30 Mall Dr W,Jersey City,NJ,7310,40.726952,-74.03788,n/a,2012394000
+LOC000344,Cell Tower,Newark Store,744 Broad St ,Newark ,NJ,7102,40.736868,-74.1714,n/a,9736480760
+LOC000345,Cell Tower,AT&T - Mercer Mall Shopping Center,3373 U.S. 1,Lawrenceville,NJ,8648,40.29673,-74.681206,n/a,6094526767
+LOC000346,Cell Tower,Stamford Store,972 High Ridge Rd,Stamford ,CT ,6905,41.105007,-73.548422,n/a,2039686116
+LOC000347,Cell Tower,Stamford Town Center (Kiosk),100 Greyrock Pl,Stamford ,CT ,6901,41.053453,-73.536096,n/a,2033253282
+LOC000348,Cell Tower,Norwalk,55 Westport Ave,Norwalk ,CT ,6851,41.122173,-73.405205,n/a,2038400021
+LOC000349,Cell Tower,Fairfield Ct (Store),1201 Kings Hwy,Fairfield ,CT ,6824,41.163849,-73.236184,n/a,2033665222
+LOC000350,Cell Tower,Center Pointe Plaza (Store),1209 Churchmans Rd,Newark ,DE ,19713,39.689549,-75.660806,n/a,3027375028
+LOC000351,Cell Tower,Wilmington Store,4345 Kirkwood Hwy,Wilmington,DE,19808,39.72787,-75.65047,n/a,3026364440

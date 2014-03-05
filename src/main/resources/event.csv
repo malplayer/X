@@ -1,0 +1,14 @@
+interval,id,event,severity,action
+10,LOC000001,Power Outage,2,SET
+20,LOC000005,Power Outage,2,SET
+30,LOC000006,Power Outage,2,SET
+40,LOC000008,Power Outage,2,SET
+45,LOC000009,Fire,3,SET
+50,LOC000012,Fire,3,SET
+50,LOC000002,Fire,3,SET
+5,LOC000009,Power Outage,2,SET
+7,LOC000021,Intrusion Alarm,1,SET
+120,LOC000021,Intrusion Alarm,1,CLEAR
+90,LOC000005,Power Outage,2,CLEAR
+100,LOC000006,Power Outage,2,CLEAR
+105,LOC000008,Power Outage,2,CLEAR
