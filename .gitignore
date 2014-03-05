@@ -215,5 +215,5 @@ pip-log.txt
 .mr.developer.cfg
 
 #jetbrains
-.iml
+*.iml
 target/
