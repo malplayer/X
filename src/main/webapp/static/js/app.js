@@ -6,26 +6,40 @@ String.prototype.format = function() { a = this; for ( k in arguments ) { a = a.
 var path = $("#path").val();
 var markerImagePath = path +"/static/images/icons/";
 var markerDefaultImage = markerImagePath + "bigcity.png";
+var carimage=path+"/static/images/caricon.png";
 var locationData=null;
 var tags=null;
 var gmap=null;  //googlemap object
 var jqmap=null; //jq google map object
 //car
-var dirn = new google.maps.DirectionsService();
-var step = 5; // metres
+
+
+
+var directionDisplay;
+var directionsService;
+var stepDisplay;
+var markerArray = [];
+var position;
+var marker = null;
+var polyline = null;
+var poly2 = null;
+var speed = 0.000005,wait = 1;
+var infowindow = null;
+
+var myPano;
+var panoClient;
+var nextPanoId;
+var timerHandle = null;
+
+var steps = [];
+
+var step = 50; // 5; // metres
 var tick = 100; // milliseconds
-var poly;
-var poly2;
-var lastVertex = 0;
 var eol;
-var car = new google.maps.MarkerImage();
-car.image=path+"/static/images/caricon.png";
-car.iconSize=new google.maps.Size(32,18);
-car.iconAnchor=new google.maps.Point(16,9);
-var marker;
 var k=0;
 var stepnum=0;
 var speed = "";
+var lastVertex = 1;
 
 
 
@@ -97,7 +111,7 @@ var getLocationDataAjax = function()
 var createMap=function()
 {
 
-    $('#map_canvas').gmap({'center':new google.maps.LatLng(41.057419, -73.537494),  'zoom': 10,'zoom': 5, 'disableDefaultUI':true}).bind('init', function(evt, map){
+    $('#map_canvas').gmap({'center':new google.maps.LatLng(41.057419, -73.537494),  'zoom': 16, 'disableDefaultUI':true,mapTypeId: google.maps.MapTypeId.ROADMAP}).bind('init', function(evt, map){
         $('#map_canvas').gmap('addControl', 'radios', google.maps.ControlPosition.TOP_LEFT);
         // createRadios();
         //createMarkers();
@@ -108,6 +122,37 @@ var createMap=function()
 
     });
     gmap = $('#map_canvas').gmap('get', 'map');
+
+
+    // Instantiate a directions service.
+    directionsService = new google.maps.DirectionsService();
+
+
+
+    // Create a renderer for directions and bind it to the map.
+    var rendererOptions = {
+        map: gmap
+    }
+    directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+
+    // Instantiate an info window to hold step text.
+    stepDisplay = new google.maps.InfoWindow();
+
+    polyline = new google.maps.Polyline({
+        path: [],
+        strokeColor: '#FF0000',
+        strokeWeight: 3
+    });
+    poly2 = new google.maps.Polyline({
+        path: [],
+        strokeColor: '#FF0000',
+        strokeWeight: 3
+    });
+
+    infowindow = new google.maps.InfoWindow(
+        {
+            size: new google.maps.Size(150,50)
+        });
 
 }
 
@@ -174,82 +219,154 @@ var createMarkers=function()
 
 }
 
+var createMarker= function(latlng, label, html) {
+    // alert("createMarker("+latlng+","+label+","+html+","+color+")");
+    var contentString = '<b>'+label+'</b><br>'+html;
+    var marker = new google.maps.Marker({
+        position: latlng,
+        map: gmap,
+        title: label,
+        icon: carimage,
+        zIndex: Math.round(latlng.lat()*-100000)<<5
+    });
+    marker.myname = label;
+    // gmarkers.push(marker);
 
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent(contentString);
+        infowindow.open(map,marker);
+    });
+    return marker;
+}
+
+var calcRoute=function(){
+
+    if (timerHandle) { clearTimeout(timerHandle); }
+    if (marker) { marker.setMap(null);}
+    polyline.setMap(null);
+    poly2.setMap(null);
+    directionsDisplay.setMap(null);
+    polyline = new google.maps.Polyline({
+        path: [],
+        strokeColor: '#FF0000',
+        strokeWeight: 3
+    });
+    poly2 = new google.maps.Polyline({
+        path: [],
+        strokeColor: '#FF0000',
+        strokeWeight: 3
+    });
+    // Create a renderer for directions and bind it to the map.
+    var rendererOptions = {
+        map: gmap
+    }
+    directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+
+    //var start = document.getElementById("start").value;
+    //var end = document.getElementById("end").value;
+    var start = "41.057419, -73.537494";
+    var end = "Washington DC";
+    var travelMode = google.maps.DirectionsTravelMode.DRIVING
+
+    var request = {
+        origin: start,
+        destination: end,
+        travelMode: travelMode
+    };
+
+    // Route the directions and pass the response to a
+    // function to create markers for each step.
+    directionsService.route(request, function(response, status) {
+        if (status == google.maps.DirectionsStatus.OK){
+            directionsDisplay.setDirections(response);
+
+            var bounds = new google.maps.LatLngBounds();
+            var route = response.routes[0];
+            startLocation = new Object();
+            endLocation = new Object();
+
+            // For each route, display summary information.
+            var path = response.routes[0].overview_path;
+            var legs = response.routes[0].legs;
+            for (i=0;i<legs.length;i++) {
+                if (i == 0) {
+                    startLocation.latlng = legs[i].start_location;
+                    startLocation.address = legs[i].start_address;
+                    // marker = google.maps.Marker({map:map,position: startLocation.latlng});
+                    marker = createMarker(legs[i].start_location,"start",legs[i].start_address,"green");
+                }
+                endLocation.latlng = legs[i].end_location;
+                endLocation.address = legs[i].end_address;
+                var steps = legs[i].steps;
+                for (j=0;j<steps.length;j++) {
+                    var nextSegment = steps[j].path;
+                    for (k=0;k<nextSegment.length;k++) {
+                        polyline.getPath().push(nextSegment[k]);
+                        bounds.extend(nextSegment[k]);
+
+
+
+                    }
+                }
+            }
+            polyline.setMap(gmap);
+            gmap.fitBounds(bounds);
+            gmap.setZoom(18);
+            gmap.setCenter(new google.maps.LatLng(41.057419, -73.537494));
+            startAnimation();
+        }
+    });
+}
+
+
+
+
+
+
+
+//=============== animation functions ======================
 var updatePoly=function(d) {
     // Spawn a new polyline every 20 vertices, because updating a 100-vertex poly is too slow
-    if (poly2.getVertexCount() > 20) {
-        poly2=new GPolyline([poly.getVertex(lastVertex-1)]);
-        gmap.addOverlay(poly2)
+    if (poly2.getPath().getLength() > 20) {
+        poly2=new google.maps.Polyline([polyline.getPath().getAt(lastVertex-1)]);
+        // map.addOverlay(poly2)
     }
 
-    if (poly.GetIndexAtDistance(d) < lastVertex+2) {
-        if (poly2.getVertexCount()>1) {
-            poly2.deleteVertex(poly2.getVertexCount()-1)
+    if (polyline.GetIndexAtDistance(d) < lastVertex+2) {
+        if (poly2.getPath().getLength()>1) {
+            poly2.getPath().removeAt(poly2.getPath().getLength()-1)
         }
-        poly2.insertVertex(poly2.getVertexCount(),poly.GetPointAtDistance(d));
+        poly2.getPath().insertAt(poly2.getPath().getLength(),polyline.GetPointAtDistance(d));
     } else {
-        poly2.insertVertex(poly2.getVertexCount(),poly.getVertex(lastVertex++));
+        poly2.getPath().insertAt(poly2.getPath().getLength(),endLocation.latlng);
     }
 }
 
-function animate(d) {
+
+var animate=function(d) {
     if (d>eol) {
-       // document.getElementById("step").innerHTML = "<b>Trip completed<\/b>";
-       // document.getElementById("distance").innerHTML =  "Miles: "+(d/1609.344).toFixed(2);
+        gmap.panTo(endLocation.latlng);
+        marker.setPosition(endLocation.latlng);
         return;
     }
-    var p = poly.GetPointAtDistance(d);
-    if (k++>=180/step) {
-        gmap.panTo(p);
-        k=0;
-    }
-    marker.setPoint(p);
-    //document.getElementById("distance").innerHTML =  "Miles: "+(d/1609.344).toFixed(2)+speed;
-    if (stepnum+1 < dirn.getRoute(0).getNumSteps()) {
-        if (dirn.getRoute(0).getStep(stepnum).getPolylineIndex() < poly.GetIndexAtDistance(d)) {
-            stepnum++;
-            var steptext = dirn.getRoute(0).getStep(stepnum).getDescriptionHtml();
-            //document.getElementById("step").innerHTML = "<b>Next:<\/b> "+steptext;
-            var stepdist = dirn.getRoute(0).getStep(stepnum-1).getDistance().meters;
-            var steptime = dirn.getRoute(0).getStep(stepnum-1).getDuration().seconds;
-            var stepspeed = ((stepdist/steptime) * 2.24).toFixed(0);
-            step = stepspeed/2.5;
-            speed = "<br>Current speed: " + stepspeed +" mph";
-        }
-    } else {
-        if (dirn.getRoute(0).getStep(stepnum).getPolylineIndex() < poly.GetIndexAtDistance(d)) {
-            //document.getElementById("step").innerHTML = "<b>Next: Arrive at your destination<\/b>";
-        }
-    }
+    var p = polyline.GetPointAtDistance(d);
+    gmap.panTo(p);
+    marker.setPosition(p);
     updatePoly(d);
-    setTimeout("animate("+(d+step)+")", tick);
+    timerHandle = setTimeout("animate("+(d+step)+")", tick);
 }
 
-google.maps.event.addListener(dirn,"load", function() {
-    //document.getElementById("controls").style.display="none";
-    poly=dirn.getPolyline();
-    eol=poly.Distance();
-    gmap.setCenter(poly.getVertex(0),17);
-    gmap.addOverlay(new google.maps.Marker(poly.getVertex(0),G_START_ICON));
-    gmap.addOverlay(new google.maps.Marker(poly.getVertex(poly.getVertexCount()-1),G_END_ICON));
-    marker = new GMarker(poly.getVertex(0),{icon:car});
-    gmap.addOverlay(marker);
-    var steptext = dirn.getRoute(0).getStep(stepnum).getDescriptionHtml();
-    //document.getElementById("step").innerHTML = steptext;
-    poly2 = new google.maps.Polyline([poly.getVertex(0)]);
-    gmap.addOverlay(poly2);
-    setTimeout("animate(0)",2000);  // Allow time for the initial map display
-});
 
-google.maps.event.addListener(dirn,"error", function() {
-    alert("Location(s) not recognised. Code: "+dirn.getStatus().code);
-});
-
-function start() {
-    var startpoint = "Philadelphia, PA";
-    var endpoint = "Washington DC";
-    dirn.loadFromWaypoints([startpoint,endpoint],{getPolyline:true,getSteps:true});
+function startAnimation() {
+    eol=polyline.Distance();
+    gmap.setCenter(polyline.getPath().getAt(0));
+    poly2 = new google.maps.Polyline({path: [polyline.getPath().getAt(0)], strokeColor:"#0000FF", strokeWeight:10});
+    setTimeout("animate(50)",2000);  // Allow time for the initial map display
 }
+
+
+//=============== ~animation funcitons =====================
+
 
 
 
@@ -257,103 +374,9 @@ $(function() {
 
     createMap();
     getLocationDataAjax();
+    $("#btnStart").click(function(e)
+    {
+        calcRoute();
+    });
 });
 
-
-/*var map = new GMap2(document.getElementById("map"));
- map.addControl(new GMapTypeControl());
- map.setCenter(new GLatLng(0,0),2);
- var dirn = new GDirections();
- var step = 5; // metres
- var tick = 100; // milliseconds
- var poly;
- var poly2;
- var lastVertex = 0;
- var eol;
- var car = new GIcon();
- car.image="caricon.png"
- car.iconSize=new GSize(32,18);
- car.iconAnchor=new GPoint(16,9);
- var marker;
- var k=0;
- var stepnum=0;
- var speed = "";
-
- function updatePoly(d) {
- // Spawn a new polyline every 20 vertices, because updating a 100-vertex poly is too slow
- if (poly2.getVertexCount() > 20) {
- poly2=new GPolyline([poly.getVertex(lastVertex-1)]);
- map.addOverlay(poly2)
- }
-
- if (poly.GetIndexAtDistance(d) < lastVertex+2) {
- if (poly2.getVertexCount()>1) {
- poly2.deleteVertex(poly2.getVertexCount()-1)
- }
- poly2.insertVertex(poly2.getVertexCount(),poly.GetPointAtDistance(d));
- } else {
- poly2.insertVertex(poly2.getVertexCount(),poly.getVertex(lastVertex++));
- }
- }
-
- function animate(d) {
- if (d>eol) {
- document.getElementById("step").innerHTML = "<b>Trip completed<\/b>";
- document.getElementById("distance").innerHTML =  "Miles: "+(d/1609.344).toFixed(2);
- return;
- }
- var p = poly.GetPointAtDistance(d);
- if (k++>=180/step) {
- map.panTo(p);
- k=0;
- }
- marker.setPoint(p);
- document.getElementById("distance").innerHTML =  "Miles: "+(d/1609.344).toFixed(2)+speed;
- if (stepnum+1 < dirn.getRoute(0).getNumSteps()) {
- if (dirn.getRoute(0).getStep(stepnum).getPolylineIndex() < poly.GetIndexAtDistance(d)) {
- stepnum++;
- var steptext = dirn.getRoute(0).getStep(stepnum).getDescriptionHtml();
- document.getElementById("step").innerHTML = "<b>Next:<\/b> "+steptext;
- var stepdist = dirn.getRoute(0).getStep(stepnum-1).getDistance().meters;
- var steptime = dirn.getRoute(0).getStep(stepnum-1).getDuration().seconds;
- var stepspeed = ((stepdist/steptime) * 2.24).toFixed(0);
- step = stepspeed/2.5;
- speed = "<br>Current speed: " + stepspeed +" mph";
- }
- } else {
- if (dirn.getRoute(0).getStep(stepnum).getPolylineIndex() < poly.GetIndexAtDistance(d)) {
- document.getElementById("step").innerHTML = "<b>Next: Arrive at your destination<\/b>";
- }
- }
- updatePoly(d);
- setTimeout("animate("+(d+step)+")", tick);
- }
-
- GEvent.addListener(dirn,"load", function() {
- document.getElementById("controls").style.display="none";
- poly=dirn.getPolyline();
- eol=poly.Distance();
- map.setCenter(poly.getVertex(0),17);
- map.addOverlay(new GMarker(poly.getVertex(0),G_START_ICON));
- map.addOverlay(new GMarker(poly.getVertex(poly.getVertexCount()-1),G_END_ICON));
- marker = new GMarker(poly.getVertex(0),{icon:car});
- map.addOverlay(marker);
- var steptext = dirn.getRoute(0).getStep(stepnum).getDescriptionHtml();
- document.getElementById("step").innerHTML = steptext;
- poly2 = new GPolyline([poly.getVertex(0)]);
- map.addOverlay(poly2);
- setTimeout("animate(0)",2000);  // Allow time for the initial map display
- });
-
- GEvent.addListener(dirn,"error", function() {
- alert("Location(s) not recognised. Code: "+dirn.getStatus().code);
- });
-
- function start() {
- var startpoint = document.getElementById("startpoint").value;
- var endpoint = document.getElementById("endpoint").value;
- dirn.loadFromWaypoints([startpoint,endpoint],{getPolyline:true,getSteps:true});
- }
-
- }
- */

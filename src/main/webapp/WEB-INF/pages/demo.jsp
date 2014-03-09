@@ -76,6 +76,12 @@
   </div>
 </div>
 
+    <div class="row">
+        <div class="col-md-2">
+            <button  type="button" id="btnStart" class=" btn btn-success" data-toggle="modal" data-target="#demModal">Start</button>
+        </div>
+    </div>
+
 
 </div><!-- /.container -->
 
