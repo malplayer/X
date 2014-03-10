@@ -71,7 +71,7 @@
         <div class="item rounded dark row">
             <div id="map_canvas" class="map rounded"></div>
         </div>
-        <div id="radios" class="item gradient rounded shadow" style="margin:5px;padding:5px 5px 5px 10px;overflow:scroll"></div>
+        <div id="radios" class="item gradient rounded shadow" style="margin:5px;padding:5px 5px 5px 10px;overflow-y: scroll;height: 600px"></div>
 
   </div>
 </div>
