@@ -807,7 +807,8 @@ $(function() {
         $wcontent.slideToggle(300);
     });
 
-    medical_trauma_stat = $('#medical_trauma_stat').peity("line", { fill: ['#B017F'] });
+    $(".line").peity("line", { fill: ['#B017F'] });
+    $(".bar").peity("bar", { fill: ['#B017F'] });
     updateDemo();
     //setInterval(function () { updateDemo() }, updatePeriod * 1000);
 });
