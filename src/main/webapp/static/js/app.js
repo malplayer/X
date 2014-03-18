@@ -75,6 +75,54 @@ MarkerImages['Train Station'] = markerImagePath + "train.png";
 MarkerImages['Cell Tower'] = markerImagePath + "mobilephonetower.png";
 
 
+
+/* plot stuff */
+var plot1;
+var updatePeriod = 2;
+
+var fireConst =     [30, 22, 19, 9, 0, 41, 21, 31, 19, 25, 35, 32, 14, 9, 15, 25, 23, 45, 52, 71, 79, 85, 72, 45];
+var medicalConst =  [1428, 1823, 1201, 1023, 1780, 2503, 2802, 2907, 3102, 3019, 2973, 2141, 2190, 2342, 2012, 2302, 2212, 2340, 2134, 1934, 1745, 1521, 1329, 1290];
+var policeConst =   [4512, 5123, 4102, 3912, 4790, 5123, 5178, 7012, 5127, 4912, 5289, 5185, 7045, 5913, 4790, 5957, 7012, 7103, 7012, 7132, 5901, 4808, 4790, 4577];
+var utilityConst =  [3, 5, 1, 3, 7, 8, 2, 6, 2, 1, 6, 8, 4, 2, 5, 4, 7, 3, 2, 1, 10, 4, 5, 2];
+
+//var myVar = setInterval(function () { updateDemo() }, updatePeriod * 1000);
+var emerCalls;
+var timeArray = new Array();
+
+var fireLastHour = -1;
+var firePast = new Array();
+var fire = new Array();
+var curFire = 0;
+var FirstFireCalculation = true;
+
+var utilityLastHour = -1;
+var utilityPast = new Array();
+var utility = new Array();
+var curUtility = 0;
+var FirstUtilityCalculation = true;
+
+var medicalLastHour = -1;
+var medicalPast = new Array();
+var medical = new Array();
+var curMedical = 0;
+var FirstMedicalCalculation = true;
+var medical_trauma;
+var medical_respitory;
+var medical_illness;
+var medical_poisen;
+var medical_uncategorized;
+
+var policeLastHour = -1;
+
+var policePast = new Array();
+var police = new Array();
+var curPolice = 0;
+var FirstPoliceCalculation = true;
+var medical_trauma_stat;
+
+
+
+
 var getLocationDataAjax = function()
 {
     var url = path +"/api/getpoi/";
@@ -239,7 +287,7 @@ var createMarker= function(latlng, label, html) {
     return marker;
 }
 
-var calcRoute=function(){
+var calcRoute=function(startPoint,endPoint){
 
     if (timerHandle) { clearTimeout(timerHandle); }
     if (marker) { marker.setMap(null);}
@@ -264,8 +312,8 @@ var calcRoute=function(){
 
     //var start = document.getElementById("start").value;
     //var end = document.getElementById("end").value;
-    var start = "41.057419, -73.537494";
-    var end = "Washington DC";
+    var start = startPoint;
+    var end = endPoint;
     var travelMode = google.maps.DirectionsTravelMode.DRIVING
 
     var request = {
@@ -369,6 +417,358 @@ function startAnimation() {
 
 
 
+/*chart funtions */
+
+var fillTimeArray = function() {
+    var current = new Date().getHours();
+    timeArray = new Array();
+    var milhr;
+    var hours;
+    for (var h = 11; h >= 0; h--) {
+        milhr = current - h;
+        if (milhr < 0) {
+            milhr += 24;
+        }
+        suffex = (milhr >= 12) ? 'pm' : 'am';
+
+        hours = (milhr > 12) ? milhr - 12 : milhr;
+
+        //if 00 then it is 12 am
+        hours = (milhr == '00') ? 12 : hours;
+        timeArray.push(hours + ":00 " + suffex);
+    }
+}
+
+
+
+var fillFire=function()
+{
+    var durDate = new Date();
+    var currentHour = durDate.getHours();
+    fire = [];
+    if (FirstFireCalculation)
+    {
+        var perc = durDate.getMinutes()/60;
+        curFire = Math.floor(fireConst[durDate.getHours()] * perc);
+        FirstFireCalculation = false;
+        fireLastHour = currentHour;
+    }
+
+    if (currentHour != fireLastHour) {
+        fireLastHour = currentHour;
+        firePast.push(curFire);
+        curFire = 0;
+    }
+
+    for (var h = 11; h - firePast.length >= 1; h--) {
+        cur = durDate.getHours() - h;
+        if (cur < 0)
+        {
+            cur += 24;
+        }
+        fire.push(fireConst[cur]);
+    }
+
+    //The amount of times this function is called per hour
+    var CalledPerHour = (3600 / updatePeriod);
+
+    //The amount of fires that occur this hour
+    var FireThisHour = fireConst[durDate.getHours()];
+
+
+    var AverageFirePerCall = (((FireThisHour / CalledPerHour) * 2) - 1);
+
+    if (AverageFirePerCall > 0) {
+        curMedical += Math.floor((Math.random() * AverageFirePerCall) + 1);
+    } else {
+        var random = Math.floor((Math.random() * 100) + 1);
+        var numUnder = (fireConst[durDate.getHours()] / CalledPerHour) * 100;
+        if (random < numUnder) {
+            curFire++;
+        }
+    }
+
+    fire_residential = Math.ceil(curFire * .2);
+    fire_commercial = Math.ceil(curFire * .08);
+    fire_government = Math.ceil(curFire * .05);
+    fire_vehicle = Math.ceil(curFire * .3);
+    fire_wild = Math.ceil(curFire * .09);
+
+    fire_unknown = curFire - (fire_residential + fire_commercial + fire_government + fire_vehicle +fire_wild);
+    if (fire_unknown < 0) {
+
+        fire_unknown = 0;
+    }
+
+
+    $('#fire_problems').text(curFire);
+    $('#fire_residential_amount').text(fire_residential);
+    $('#fire_commercial_amount').text(fire_commercial);
+    $('#fire_government_amount').text(fire_government);
+    $('#fire_vehicle_amount').text(fire_vehicle);
+    $('#fire_wild_amount').text(fire_wild);
+    $('#fire_unknown_amount').text(fire_unknown);
+
+
+    fire.push(curFire);
+}
+
+
+
+
+
+var fillMedical=function() {
+    var durDate = new Date();
+    var currentHour = durDate.getHours();
+    medical = [];
+    if (FirstMedicalCalculation) {
+        var perc = durDate.getMinutes() / 60;
+        curMedical = Math.floor(medicalConst[durDate.getHours()] * perc);
+
+        FirstMedicalCalculation = false;
+        medicalLastHour = currentHour;
+    }
+
+    if (currentHour != medicalLastHour) {
+        medicalLastHour = currentHour;
+        medicalPast.push(curMedical);
+        curMedical = 0;
+    }
+
+    for (var h = 11; h - medicalPast.length >= 1; h--) {
+        cur = durDate.getHours() - h;
+        if (cur < 0)
+        {
+            cur += 24;
+        }
+        medical.push(medicalConst[cur]);
+    }
+
+    //The amount of times this function is called per hour
+    var CalledPerHour = (3600 / updatePeriod);
+
+    //The amount of fires that occur this hour
+    var MedicalThisHour = medicalConst[durDate.getHours()];
+
+    //Percent of hour that has fire
+    var PercentMedical = (MedicalThisHour / 60) * 100;
+
+    var AverageMedicalPerCall = (((MedicalThisHour / CalledPerHour) * 2) - 1);
+
+    var AddedMedical;
+
+    var tmp;
+    if (AverageMedicalPerCall > 0) {
+
+        AddedMedical = Math.floor((Math.random() * AverageMedicalPerCall) + 1);
+        curMedical += AddedMedical;
+
+
+    } else
+    {
+        var random = Math.floor((Math.random() * 100) + 1);
+        var numUnder = (medicalConst[durDate.getHours()] / CalledPerHour)*100;
+        if (random < numUnder) {
+            curMedical++;
+        }
+    }
+
+    medical_trauma = Math.ceil(curMedical * .3);
+    medical_respitory = Math.ceil(curMedical * .2);
+    medical_illness = Math.ceil(curMedical * .2);
+    medical_poisen = Math.ceil(curMedical * .1);
+    medical_uncategorized = curMedical - (medical_trauma + medical_respitory + medical_illness + medical_poisen);
+    if (medical_uncategorized < 0) {
+
+        medical_uncategorized = 0;
+    }
+
+    medical.push(curMedical);
+
+    $('#medical_problems').text(curMedical);
+    $('#medical_trauma_amount').text(medical_trauma);
+    $('#medical_respitory_amount').text(medical_respitory);
+    $('#medical_illnes_amount').text(medical_illness);
+    $('#medical_poisen_amount').text(medical_poisen);
+    $('#medical_unknown_amount').text(medical_uncategorized);
+    //medical_trauma_stat.text(medical_trauma.join(",")).change();
+
+}
+
+
+
+var fillPolice=function() {
+    var durDate = new Date();
+    var currentHour = durDate.getHours();
+    police = [];
+    if (FirstPoliceCalculation) {
+        var perc = durDate.getMinutes() / 60;
+        curPolice = Math.floor(policeConst[durDate.getHours()] * perc);
+        FirstPoliceCalculation = false;
+        policeLastHour = currentHour;
+    }
+
+    if (currentHour != policeLastHour) {
+        policeLastHour = currentHour;
+        policePast.push(curPolice);
+        curPolice = 0;
+    }
+
+    for (var h = 11; h - policePast.length >= 1; h--) {
+        cur = durDate.getHours() - h;
+        if (cur < 0)
+        {
+            cur += 24;
+        }
+        police.push(policeConst[cur]);
+    }
+
+    //The amount of times this function is called per hour
+    var CalledPerHour = (3600 / updatePeriod);
+
+    //The amount of fires that occur this hour
+    var PoliceThisHour = policeConst[durDate.getHours()];
+
+    //Percent of hour that has fire
+    var PercentPolice = (PoliceThisHour / 60) * 100;
+
+    var AveragePolicePerCall = (((PoliceThisHour / CalledPerHour) * 2) - 1)
+
+    if (AveragePolicePerCall > 0) {
+        curPolice += Math.floor((Math.random() * AveragePolicePerCall) + 1);
+    } else {
+        var random = Math.floor((Math.random() * 100) + 1);
+        var numUnder = (policeConstv[durDate.getHours()] / CalledPerHour) * 100;
+        if (random < numUnder) {
+            curPolice++;
+        }
+    }
+
+    police.push(curPolice);
+}
+
+
+
+var fillUtility=function() {
+    var durDate = new Date();
+    var currentHour = durDate.getHours();
+    utility = [];
+    if (FirstUtilityCalculation) {
+        var perc = durDate.getMinutes() / 60;
+        curUtility = Math.floor(utilityConst[durDate.getHours()] * perc);
+        FirstUtilityCalculation = false;
+        utilityLastHour = currentHour;
+    }
+
+    if (currentHour != utilityLastHour) {
+        utilityLastHour = currentHour;
+        utilityPast.push(curUtility);
+        curUtility = 0;
+    }
+
+    for (var h = 11; h - utilityPast.length >= 1; h--) {
+        cur = durDate.getHours() - h;
+        if (cur < 0) {
+            cur += 24;
+        }
+        utility.push(utilityConst[cur]);
+    }
+
+    //The amount of times this function is called per hour
+    var CalledPerHour = (3600 / updatePeriod);
+
+    //The amount of fires that occur this hour
+    var UtilityThisHour = utilityConst[durDate.getHours()];
+
+    //Percent of hour that has fire
+    var PercentUtility = (UtilityThisHour / 60) * 100;
+
+    var AverageUtilityPerCall = (((UtilityThisHour / CalledPerHour) * 2) - 1)
+
+    if (AverageUtilityPerCall > 0) {
+        curUtility += Math.floor((Math.random() * AverageUtilityPerCall) + 1);
+    } else {
+        var random = Math.floor((Math.random() * 100) + 1);
+        var numUnder = (utilityConst[durDate.getHours()] / CalledPerHour) * 100;
+        if (random < numUnder) {
+            curUtility++;
+        }
+    }
+
+    utility.push(curUtility);
+}
+
+var  updateDemo = function() {
+    fillTimeArray();
+    fillFire();
+    fillMedical();
+    fillPolice();
+    fillUtility();
+
+    if(plot1)
+    {
+        plot1.destroy();
+    }
+
+    var utility = [4, 9, 2, 13, 12, 4, 12, 9, 12, 11, 3, 0];
+
+    plot1 = $.jqplot("chart6", [medical, fire, police, utility], {
+        // Tell the plot to stack the bars.
+        seriesDefaults: {
+            pointLabels: { show: true },
+            showMarker:false
+        },
+        captureRightClick: true,
+        series: [
+            {
+                // Change our line width and use a diamond shaped marker.
+                lineWidth: 2,
+                color: '#B0171F',
+                label: 'Medical'
+            },
+            {
+                // Don't show a line, just show markers.
+                // Make the markers 7 pixels with an 'x' style
+
+                color: '#FF4500',
+                label: 'Fire'
+            },
+            {
+                // Use (open) circlular markers.
+
+                color: '#0000FF',
+                label: 'Police'
+            },
+            {
+                // Use a thicker, 5 pixel line and 10 pixel
+                // filled square markers.
+
+                color: '#66CDAA',
+                label: 'Utility'
+            }
+        ],
+        axes: {
+            xaxis: {
+                renderer: $.jqplot.CategoryAxisRenderer,
+                label: 'Time (local)',
+                ticks: timeArray
+            },
+            yaxis: {
+                // Don't pad out the bottom of the data range.  By default,
+                // axes scaled as if data extended 10% above and below the
+                // actual range to prevent data points right on grid boundaries.
+                // Don't want to do that here.
+
+                label: 'Alerts'
+            }
+        },
+        legend: {
+            show: true,
+            placement: 'outsideGrid'
+        }
+    });
+}
+
 
 $(function() {
 
@@ -376,7 +776,9 @@ $(function() {
     getLocationDataAjax();
     $("#btnStart").click(function(e)
     {
-        calcRoute();
+        var start = "41.057419, -73.537494";
+        var end = "Washington DC";
+        calcRoute(start,end);
     });
 
     /* Widget close */
@@ -404,5 +806,22 @@ $(function() {
         }
         $wcontent.slideToggle(300);
     });
+
+    medical_trauma_stat = $('#medical_trauma_stat').peity("line", { fill: ['#B017F'] });
+    updateDemo();
+    //setInterval(function () { updateDemo() }, updatePeriod * 1000);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 

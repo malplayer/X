@@ -83,53 +83,13 @@
         </div>
     </div>
     <div class="row" >
-        <!-- Recent News -->
-        <div class="col-md-4">
-            <div class="widget">
-                <!-- Widget title -->
-                <div class="widget-head">
-                    <div class="pull-left">Recent News</div>
-                    <div class="widget-icons pull-right">
-                        <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
-                        <a href="#" class="wsettings"><i class="fa fa-wrench"></i></a>
-                        <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="widget-content referrer">
-                    <!-- Widget content -->
-                    <div class="padd">
-                        <ul class="latest-news">
-                            <li>
-                                <!-- Title and date -->
-                                <h6><a href="#">Morbi ac felis nec </a> - <span>Jan 1, 2012</span></h6>
-                                <p>Suspendisse potenti. Morbi ac felis fermentum. Aenean lacus hendrerit sed rhoncus erat hendrerit. </p>
-                            </li>
 
-                            <li>
-                                <!-- Title and date -->
-                                <h6><a href="#">Aac felis nec imperdiet</a> - <span>Jan 1, 2012</span></h6>
-                                <p>Suspendisse potenti. Morbi ac felis fermentum. Aenean lacus hendrerit sed rhoncus erat hendrerit. </p>
-                            </li>
-
-                            <li>
-                                <!-- Title and date -->
-                                <h6><a href="#">Felis nec imperdiet</a> - <span>Jan 1, 2012</span></h6>
-                                <p>Suspendisse potenti. Morbi ac felis fermentum. Aenean hendrerit sed rhoncus erat hendrerit. </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Black widget -->
-        <div class="col-md-4">
+        <!-- Chart widget -->
+        <div class="col-md-12">
             <div class="widget wblack">
                 <!-- Widget title -->
                 <div class="widget-head">
-                    <div class="pull-left">Black Widget</div>
+                    <div class="pull-left">Alert Chart</div>
                     <div class="widget-icons pull-right">
                         <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
                         <a href="#" class="wsettings"><i class="fa fa-wrench"></i></a>
@@ -140,19 +100,339 @@
                 <div class="widget-content">
                     <!-- Widget content -->
                     <div class="padd">
-                        <h4>This is Hero Unit</h4>
-                        <p>Nullam justo nunc, dignissim at convallis posuere, sodales dignissim eu orci. Duis a risus sed dolor placerat semper quis in urna. Nullam justo nunc, dignissim at convallis posuere, dignissim sodales eu orci. Duis a risus sed dolor placerat semper quis in urna.</p>
-                    </div>
+                        <div class="stats_bar">
+                            <div id="chart6" class="chart_block">
+                            </div>
+                        </div>
 
-                    <div class="widget-foot">
-                        <a href="#" class="btn btn-danger">Visit Now</a>
-                        <a href="#" class="btn btn-warning">Download</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div>
+        </div>
+    <div class="row" >
+
+        <!-- Medical Chart widget -->
+        <div class="col-md-3">
+            <div class="widget wblack">
+                <!-- Widget title -->
+                <div class="widget-head">
+                    <div class="pull-left"><span class="glyphicon glyphicon-stats"></span>&nbsp;Medical</div>
+                    <div class="widget-icons pull-right">
+                        <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                        <a href="#" class="wsettings"><i class="fa fa-wrench"></i></a>
+                        <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <!-- Widget content -->
+                    <div class="padd">
+                        <div class="stat_block">
+                            <h4 style="text-align:center"><span id="medical_problems"></span> Medical Alerts</h4>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>Trauma
+                                    </td>
+                                    <td><span id="medical_trauma_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="bar" id="medical_trauma_stat">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Respitory
+                                    </td>
+                                    <td><span id="medical_respitory_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Illnes
+                                    </td>
+                                    <td><span id="medical_illnes_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Poisen
+                                    </td>
+                                    <td><span id="medical_poisen_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Unknown
+                                    </td>
+                                    <td><span id="medical_unknown_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fire Chart widget -->
+        <div class="col-md-3">
+            <div class="widget wblack">
+                <!-- Widget title -->
+                <div class="widget-head">
+                    <div class="pull-left"><span class="glyphicon glyphicon-stats"></span>&nbsp;Fire</div>
+                    <div class="widget-icons pull-right">
+                        <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                        <a href="#" class="wsettings"><i class="fa fa-wrench"></i></a>
+                        <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <!-- Widget content -->
+                    <div class="padd">
+                        <div class="stat_block">
+                            <h4 style="text-align:center"><span id="fire_problems"></span> Fire Alerts</h4>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        Residential
+                                    </td>
+                                    <td>
+                                        <span id="fire_residential_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="bar" id="fire_residential_stat">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Commercial
+                                    </td>
+                                    <td>
+                                        <span id="fire_commercial_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Government
+                                    </td>
+                                    <td>
+                                        <span id="fire_government_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Vehicle
+                                    </td>
+                                    <td>
+                                        <span id="fire_vehicle_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Wild
+                                    </td>
+                                    <td>
+                                        <span id="fire_wild_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Unknown
+                                    </td>
+                                    <td>
+                                        <span id="fire_unknown_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Police Chart widget -->
+        <div class="col-md-3">
+            <div class="widget wblack">
+                <!-- Widget title -->
+                <div class="widget-head">
+                    <div class="pull-left"><span class="glyphicon glyphicon-stats"></span>&nbsp;Police</div>
+                    <div class="widget-icons pull-right">
+                        <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                        <a href="#" class="wsettings"><i class="fa fa-wrench"></i></a>
+                        <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <!-- Widget content -->
+                    <div class="padd">
+                        <div class="stat_block">
+                            <h4 style="text-align:center"><span id="police_problems"></span> Police Alerts</h4>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        Criminal
+                                    </td>
+                                    <td>
+                                        <span id="police_criminal_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="bar" id="police_criminal_stat">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Accident
+                                    </td>
+                                    <td>
+                                        <span id="police_accident_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Alarm
+                                    </td>
+                                    <td>
+                                        <span id="police_alarm_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Unknown
+                                    </td>
+                                    <td>
+                                        <span id="police_unknown_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Utility Chart widget -->
+        <div class="col-md-3">
+            <div class="widget wblack">
+                <!-- Widget title -->
+                <div class="widget-head">
+                    <div class="pull-left"><span class="glyphicon glyphicon-stats"></span>&nbsp;Utility</div>
+                    <div class="widget-icons pull-right">
+                        <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                        <a href="#" class="wsettings"><i class="fa fa-wrench"></i></a>
+                        <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                    <!-- Widget content -->
+                    <div class="padd">
+                        <div class="stat_block">
+                            <h4 style="text-align:center"><span id="utility_problems"></span> Utility Alerts</h4>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        Electric
+                                    </td>
+                                    <td>
+                                        <span id="utility_electric_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="bar" id="utility_electric_stat">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Water
+                                    </td>
+                                    <td>
+                                        <span id="utility_water_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Gas
+                                    </td>
+                                    <td>
+                                        <span id="utility_gas_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Data
+                                    </td>
+                                    <td>
+                                        <span id="utility_data_amount"></span>
+                                    </td>
+                                    <td class="min_chart">
+                                        <span class="line">20,30,50,200,250,280,350</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+
 
 
         </div><!-- /.container -->
@@ -171,6 +451,7 @@
 
         <script src="<c:url value="/static/js/jquery.ui.map.full.min.js"/>"></script>
         <script src="<c:url value="/static/js/epoly.js"/>"></script>
+        <script src="<c:url value="/static/js/jquery.peity.min.js"/>"></script>
 
         <script src="<c:url value="/static/js/app.js"/>"></script>
 </body>
