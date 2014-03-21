@@ -32,7 +32,7 @@ hr{border-color: #333;}
     min-height:50px;
     box-shadow:0 1px 1px rgba(0, 0, 0, 0.05);
     background: #fff;
-/*background: #fafafa url('../images/cream.png') repeat;*/
+    /*background: #fafafa url('../images/cream.png') repeat;*/
 }
 
 .widget p{
@@ -178,8 +178,8 @@ hr{border-color: #333;}
     text-shadow:none;
 }
 .widget.wblack{
-   /* background: #fafafa url('../images/black.png') repeat;*/
-    color: #ddd;
+    /* background: #fafafa url('../images/black.png') repeat;*/
+    color: #000;
     border: 1px solid #222;
 }
 
@@ -333,7 +333,7 @@ hr{border-color: #333;}
 .widget.wblack h4,
 .widget.wblack h5,
 .widget.wblack h6{
-    color: #ddd;
+    color: #000;
 }
 
 .widget.wblack blockquote{

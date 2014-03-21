@@ -645,6 +645,24 @@ var fillPolice=function() {
     }
 
     police.push(curPolice);
+
+
+    police_criminal = Math.ceil(curPolice * .3);
+    police_accident = Math.ceil(curPolice * .4);
+    police_alarm = Math.ceil(curPolice * .2);
+    police_unknown = curPolice - (police_alarm  + police_accident + police_criminal);
+    if (police_unknown  < 0) {
+
+        police_unknown = 0;
+    }
+
+
+
+    $('#police_problems').text(curPolice);
+    $('#police_criminal_amount').text(police_criminal);
+    $('#police_accident_amount').text(police_accident);
+    $('#police_alarm_amount').text(police_alarm);
+    $('#police_unknown_amount').text(police_unknown);
 }
 
 
@@ -696,6 +714,23 @@ var fillUtility=function() {
     }
 
     utility.push(curUtility);
+
+    utility_electric = Math.ceil(curUtility * .2);
+    utility_water = Math.ceil(curUtility * .3);
+    utility_gas = Math.ceil(curUtility * .2);
+    utility_data = curUtility - (utility_gas  + utility_water + utility_electric );
+    if (utility_data  < 0) {
+
+        utility_data = 0;
+    }
+
+
+    $('#utility_problems').text(curUtility);
+    $('#utility_electric_amount').text(utility_electric);
+    $('#utility_water_amount').text(utility_water);
+    $('#utility_gas_amount').text(utility_gas);
+    $('#utility_data_amount').text(utility_data);
+
 }
 
 var  updateDemo = function() {
@@ -810,19 +845,5 @@ $(function() {
     $(".line").peity("line", { fill: ['#B017F'] });
     $(".bar").peity("bar", { fill: ['#B017F'] });
     updateDemo();
-    //setInterval(function () { updateDemo() }, updatePeriod * 1000);
+    setInterval(function () { updateDemo() }, updatePeriod * 1000);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
